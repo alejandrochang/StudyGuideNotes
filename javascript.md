@@ -1,5 +1,10 @@
 # JavaScript
 
+### What's the difference between asynchronous and synchronous API?
+A synchronous API waits for a response, and blocks everything else from happening in the application until that response is received. 
+An asynchronous API does not wait for a response, but instead asks to be notified when a response is available. As a result it does not block other
+functionality in the application from progressing. 
+
 ### Give a high level overview of what an object's prototype represents
 A prototype is the class that an object inherits from
 
