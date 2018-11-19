@@ -1,5 +1,9 @@
 # MISC
 
+### Whats the difference between dynamic typing as oppesed to static typing?
+In dynamic typing you can declare a variable without declaring its type, which will only be derived at run time. JavaScript has dynamic typing will a 
+language like Java has static typing. 
+
 ### Name 5 benefits of HTML5
 Accessibility, VA Support, Cleaner Code, Local Storage, Mobile Support
 
