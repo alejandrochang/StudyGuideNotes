@@ -7,7 +7,7 @@ A base case is a solution to a given problem to build off. If no base case is gi
 
 
 ### What exactly is a Stack Overflow?
-when to many recursive calls are made because no base case was given
+when too many recursive calls are made because no base case was given
 
 
 ### Describe direct and indirect recursion
