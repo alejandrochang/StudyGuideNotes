@@ -7,6 +7,7 @@ functionality in the application from progressing.
 
 ### Give a high level overview of what an object's prototype represents
 A prototype is the class that an object inherits from
+(Another way of saying class is: 'references to values stored in memory and procedures that an object has access to')
 
 ### What are the differences between the __proto__ and prototype attributes?
 Obj.prototype is a property of a Function object. It is the prototype of objects constructed by that function.
@@ -52,7 +53,6 @@ elementary.getStaff()          // ["Seymour Skinner", "Edna Krabappel", "Otto Ma
 
 ## What is data encapsulation?
 the idea that some data or functions should not be directly exposed, it's hidden in the closure
-
 
 ### What is the difference between the memory heap and call stack in javascript?
 The heap is for memory allocation. The call stack is a list of things to do, one task at a time
@@ -238,6 +238,8 @@ a result function and error function
 
 ### explain .then in the context of the callback queue
 .then takes in a callback that can be written inside its argument, whereas a callback must be defined beforehand
+.then is a synchronous event that is executed upon completion of the Promise (async event) that it is attached to.
+See [this link](https://stackoverflow.com/questions/29421781/how-are-the-event-loop-callback-queue-and-javascript-s-single-thread-connected) for a note about how async operations are handled in the browser.
 
 ### What is Promise Chaining?
 a way to execute async tasks in succession
@@ -274,6 +276,7 @@ Displays an interactive list of the properties of the specified JavaScript objec
 
 ### What is currying?
 translating a function from callable as f(a, b, c) into callable as f(a)(b)(c)
+- an object that holds a function to execute under a set condition. Interaction with that object either advances the object (presumably) toward its set condition, or executes the function once the set condition is reached.
 
 ### What extra features do you get when using lodash.curry?
 return a wrapper that allows a function to be called normally when all arguments are supplied or returns a partial otherwise
