@@ -105,6 +105,8 @@ Data is sent through a hashing function. That hash function result is then put m
 ### Give a high level overview of how to implement a Linked List.
 Nodes are created with values and pointers to other nodes to create a "list"
 
+Linked Lists have O(1) insertion and removal because you only have to reassign pointers between max of three nodes. Linked lists have O(n) lookup because you have to look through all the nodes until you find the node you are looking for in the 'chain' of links.
+
 <!-- WEEK 5 -->
 
 ## BINARY SEARCH
@@ -122,7 +124,7 @@ If you can find the pivot element, then you can still do log(n) binary search on
 ### How does Interpolation Search Work?
 In a uniformly distributed collection of integers, you interpolate the searched element between min and max and then access that index. if the number matches, return it. if your number is less than the searched number, recurse over your number to the max and vice versa, repeat
 
-### What is Interpolation Search's expected time complexity, and what is it sworst time complexity? Why?
+### What is Interpolation Search's expected time complexity, and what is it worst time complexity? Why?
 Expected: log(log(n))
 worst: n
 
