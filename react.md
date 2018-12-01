@@ -36,3 +36,11 @@ Error Handling:
 ### Why is super called in the constructor?
 Super is called in the constructor so our class extends to any other class that also has a defined constructor. This special function calls the constructor of our parent class and allows it to initialize itself. 
 * This is why we have accewess to this.props only after we've initially called super.
+
+### What is setState and forceUpdate?
+
+setState() creates changes to the component state and tells React that this component and it's children need to be re-rendered with the updated state. 
+
+setState() does not always immediately update the component. It may defer until later. Thus, use componentDidUpdate() or a setState() callback setState(updater, callback) which guarantees to fire after the update has been applied. 
+
+forceUpdate() : If your component depends on some other data that does not include state/props update or your render() method you can achieve it by calling forceUpdate(). forceUpdate will cause render to be called on the component. 
