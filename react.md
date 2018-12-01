@@ -33,4 +33,6 @@ Unmounting:
 Error Handling:
 -componentDidCatch
 
-###
+### Why is super called in the constructor?
+Super is called in the constructor so our class extends to any other class that also has a defined constructor. This special function calls the constructor of our parent class and allows it to initialize itself. 
+* This is why we have accewess to this.props only after we've initially called super.
