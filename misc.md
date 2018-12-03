@@ -1,5 +1,11 @@
 # MISC
 
+### What is true about localStorage, sessionStorage and cookies?
+THey are all client side storage solutions. sessiomStorage and cookies are used to save encrypted data. They all can be cleared by the user. 
+
+### What persist after a browser windows closes?
+localStorage, cookies and server side cookies.
+
 ###What is memoization?
 Is a conecpt of keeping a memo of intermediate results so that you can utilize those to avoid repetetive calculations. (Mostly used in the context of recursion). 
 
