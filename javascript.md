@@ -1,5 +1,8 @@
 # JavaScript
 
+### Proper key works for error handling in jS?
+"try...catch"
+
 ### Function Declaration vs. Function Expression?
 Function declarations defines a function with the specified parameters. The function expression is a function that can be declared/assigned to a variable, const etc. Function declararations are hoisted to the top of the program while function expressions aren't. 
 
