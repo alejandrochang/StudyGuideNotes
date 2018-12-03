@@ -1,5 +1,8 @@
 # MISC
 
+###What is memoization?
+Is a conecpt of keeping a memo of intermediate results so that you can utilize those to avoid repetetive calculations. (Mostly used in the context of recursion). 
+
 ### Whats the difference between dynamic typing as oppesed to static typing?
 In dynamic typing you can declare a variable without declaring its type, which will only be derived at run time. JavaScript has dynamic typing will a 
 language like Java has static typing. 
