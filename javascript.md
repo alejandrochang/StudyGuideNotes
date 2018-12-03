@@ -1,7 +1,7 @@
 # JavaScript
 
 ### Function Declaration vs. Function Expression?
-Function declerations defines a function with the specified parameters. 
+Function declarations defines a function with the specified parameters. The function expression is a function that can be declared/assigned to a variable, const etc. Function declararations are hoisted to the top of the program while function expressions aren't. 
 
 ### What does the return of [1].push([1]) produce?
 The above code prints out 2, as the .push() method returns the length of the array. 
