@@ -1,8 +1,5 @@
 # React
 
-### How does a component get access to data in the Redux store?
-The component should be turned into a 'connected component' using a Redux container.
-
 ### Which React Life Cycle Methods can call this.setState()?
 The react life cycle methods that can call this.setState() include componentDidUpdate(), componentDidMount(), componentWillReceiveProps() - deprecated and componentWillMount(). 
 
@@ -47,3 +44,11 @@ setState() creates changes to the component state and tells React that this comp
 setState() does not always immediately update the component. It may defer until later. Thus, use componentDidUpdate() or a setState() callback setState(updater, callback) which guarantees to fire after the update has been applied. 
 
 forceUpdate() : If your component depends on some other data that does not include state/props update or your render() method you can achieve it by calling forceUpdate(). forceUpdate will cause render to be called on the component. 
+
+# Redux
+
+### How does a component get access to data in the Redux store?
+The component should be turned into a 'connected component' using a Redux container.
+
+### Which of the following are principles of Redux?
+The state of the entire application is stored in an object/ state tree within a single store. State is read-opnly. The only way to change the state is to trigger an action. Changes are made with pure function.

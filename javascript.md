@@ -286,3 +286,4 @@ return a wrapper that allows a function to be called normally when all arguments
 
 ### Why might you use currying?
 currying allows both to keep the function callable normally and to get partials easily
+

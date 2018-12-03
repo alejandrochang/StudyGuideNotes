@@ -1,5 +1,8 @@
 # MISC
 
+### What is SSL (Secure Sockets Layer)?
+SSL is the standard security tech for establishing an encrypted link between a web server and a browser.
+
 ### What is true about localStorage, sessionStorage and cookies?
 THey are all client side storage solutions. sessiomStorage and cookies are used to save encrypted data. They all can be cleared by the user. 
 
