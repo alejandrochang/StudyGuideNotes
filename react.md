@@ -1,5 +1,8 @@
 # React
 
+### How does a component get access to data in the Redux store?
+The component should be turned into a 'connected component' using a Redux container.
+
 ### Which React Life Cycle Methods can call this.setState()?
 The react life cycle methods that can call this.setState() include componentDidUpdate(), componentDidMount(), componentWillReceiveProps() - deprecated and componentWillMount(). 
 
