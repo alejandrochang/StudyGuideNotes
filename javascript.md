@@ -1,5 +1,8 @@
 # JavaScript
 
+### What does the return of [1].push([1]) produce?
+The above code prints out 2, as the .push() method returns the length of the array. 
+
 ### What's the difference between asynchronous and synchronous API?
 A synchronous API waits for a response, and blocks everything else from happening in the application until that response is received. 
 An asynchronous API does not wait for a response, but instead asks to be notified when a response is available. As a result it does not block other
