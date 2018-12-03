@@ -1,5 +1,8 @@
 # JavaScript
 
+### Function Declaration vs. Function Expression?
+Function declerations defines a function with the specified parameters. 
+
 ### What does the return of [1].push([1]) produce?
 The above code prints out 2, as the .push() method returns the length of the array. 
 
