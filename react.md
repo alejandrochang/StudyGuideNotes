@@ -1,5 +1,22 @@
 # React
 
+### Difference between component Nesting, Reusability and Configuration?
+Component nesting refers to when a component can be shown inside another component. 
+Component reusability is when we make a component that can easily be reused in our application.
+Component Configuration refers to the ability for a component to be configured once its created. 
+
+### Difference between class and className?
+Instead of using class use className for jsx. You want to avoid using class so you dont collide with class components. 
+
+### What are the two different types of components in React?
+In React you can have functional components and class components. 
+
+### Difference between a require statement and an import statement? 
+The import statement looks into the node modules and imports it into the file. Import statements come from ES2015 Module System, the require statement comes from CommonJSModules system.  
+
+### What are node modules, package.json, package-lock.json etc?
+Node modules include all of our dependencies. Package.json records all of the different dependencies and configures our project. Package-lock.json Records the exact version of the packages we installed. 
+
 ### What are typical static files and where are they located?
 Static files are typically in a public folder. Static files are never changing so this includes typically index.html, images and audio/mp3 files. 
 
