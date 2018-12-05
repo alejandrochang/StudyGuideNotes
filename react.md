@@ -1,5 +1,11 @@
 # React
 
+### What are typical static files and where are they located?
+Static files are typically in a public folder. Static files are never changing so this includes typically index.html, images and audio/mp3 files. 
+
+### What is Babel and why use it?
+Babel is a command-line tool that can take any version of JS and spit out a newer version. It allows us to use any JS so it is supported in any browser even if it's not up-to-date. 
+
 ### What is JSX and how is it used in React?
 JSX is a syntax-extension to JavaScript that has familiar syntax to HTML making it easy-to-use and incorporate both JSX and JS in one file. 
 
