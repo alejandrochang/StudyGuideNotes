@@ -1,5 +1,12 @@
 # React
 
+### What is JSX and how is it used in React?
+JSX is a syntax-extension to JavaScript that has familiar syntax to HTML making it easy-to-use and incorporate both JSX and JS in one file. 
+
+### Difference between React and ReacDOM libraries?
+React knows what a component is and how to make components work together. 
+ReactDOM knows how to take a component and make it show up in the DOM. 
+
 ### Which React Life Cycle Methods can call this.setState()?
 The react life cycle methods that can call this.setState() include componentDidUpdate(), componentDidMount(), componentWillReceiveProps() - deprecated and componentWillMount(). 
 
