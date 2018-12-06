@@ -1,5 +1,17 @@
 # React
 
+### What are props?
+Props is a system for passing data from a parent component to a child component. The ultimate goal is customize or configure a child component. Either customize how the component looks or how the user interacts with it. 
+
+### What is component hierachy?
+Component hierachy is a diagram that tells the different components that are being diplayed in our application and the relationship for those different components.
+
+### How to create a reusable configurable component?
+1. Identify the repettitive JSX
+2. Descriptive name for what it does (What is it's purpose)
+3. New file for component
+6. Make it configurable by using React's props system
+
 ### Difference between component Nesting, Reusability and Configuration?
 Component nesting refers to when a component can be shown inside another component. 
 Component reusability is when we make a component that can easily be reused in our application.
