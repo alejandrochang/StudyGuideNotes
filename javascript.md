@@ -37,7 +37,7 @@ Either an Object or NULL
 Closure allows a function to access variables from an enclosing scope even after it leaves the scope in which it was declared
 
 ### Formally define a Javascript closure
-Variables defined outside the scope of a function that are used in the function
+Variables defined outside the scope of a function that are used in the function.
 
 ### Give an example of a closure
 ```js
@@ -114,7 +114,6 @@ Variables are partially hoisted. var declarations are hoisted but not its assign
 
 ### What type of function is invoked with the new keyword? What does this function return?
 Constructor Functions, returns an object
-
 
 
 ### How can you stop event bubbling?

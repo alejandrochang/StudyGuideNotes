@@ -1,5 +1,14 @@
 # React
 
+### What is conditional rendering?
+Returning different jsx/content of component based on the state or props changing.
+
+### What is super?
+Super is a reference to the parents constructor function. That's why we call super on the constructor because the 'APP' Component or any component for that matter is initially referring to it's parent the React.Component.
+
+### What is state?
+State is a JS object that containsata relevant to a component. If we want to get a single component to update itself we're going to update its state. 
+
 ### What are props?
 Props is a system for passing data from a parent component to a child component. The ultimate goal is customize or configure a child component. Either customize how the component looks or how the user interacts with it. 
 
@@ -79,7 +88,9 @@ Error Handling:
 Super is called in the constructor so our class extends to any other class that also has a defined constructor. This special function calls the constructor of our parent class and allows it to initialize itself. 
 * This is why we have accewess to this.props only after we've initially called super.
 
-### What is setState and forceUpdate?
+### What is state, setState and forceUpdate?
+
+State is the current state of the component. Typically, state can only be used in class-based components, unless you use the hooks system. 
 
 setState() creates changes to the component state and tells React that this component and it's children need to be re-rendered with the updated state. 
 
