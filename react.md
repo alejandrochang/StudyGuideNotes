@@ -1,5 +1,18 @@
 # React
 
+### What are Lifecycle methods good for?
+constructor: good place to do one-time setup
+render: Avoid doing anything nore related to JSX
+
+*Content becomes visible to screen*
+
+componentDidMount: 
+
+*Sit and wait for updates*
+
+componentDidUpdate:
+componentWillUnmount:
+
 ### What is conditional rendering?
 Returning different jsx/content of component based on the state or props changing.
 
