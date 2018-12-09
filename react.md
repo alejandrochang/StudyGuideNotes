@@ -1,5 +1,15 @@
 # React
 
+### Promise versus async await?
+
+
+### Network Request and Fetchning Data, What are the two common ways of doing it?
+axios: a third partypackage
+fetch: built into modern browsers
+
+### Difference between uncontrolled and controlled component?
+Controlled components store their information inside React components such as the state instead of storing it into the DOM. 
+
 ### What are the three special event handlers in React and what do they do?
 1. onClick = User clicks on something
 2. onChange = User changes text in an input tag
