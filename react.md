@@ -1,5 +1,10 @@
 # React
 
+### What are the three special event handlers in React and what do they do?
+1. onClick = User clicks on something
+2. onChange = User changes text in an input tag
+3. onSubmit = Users submits a form
+
 ### What are Lifecycle methods good for?
 constructor: good place to do one-time setup
 render: Avoid doing anything nore related to JSX
