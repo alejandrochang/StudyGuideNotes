@@ -6,12 +6,12 @@ render: Avoid doing anything nore related to JSX
 
 *Content becomes visible to screen*
 
-componentDidMount: 
+componentDidMount: Good place for data-loading
 
 *Sit and wait for updates*
 
-componentDidUpdate:
-componentWillUnmount:
+componentDidUpdate: Good place for more data-loading when state/props change
+componentWillUnmount: Good place to do cleanup, especially non-React stuff
 
 ### What is conditional rendering?
 Returning different jsx/content of component based on the state or props changing.
