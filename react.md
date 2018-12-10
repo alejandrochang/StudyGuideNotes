@@ -4,7 +4,7 @@
 Refs in react are essentially the way we use React to acces Nodes in the DOM, giving access to a single DOM element. 
 
 ### Promise versus async await?
-
+They both work using promises, but async await has a few advantages to using it. Async awaits return a promise. 
 
 ### Network Request and Fetchning Data, What are the two common ways of doing it?
 axios: a third partypackage
