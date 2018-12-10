@@ -11,6 +11,6 @@ The Stack is thread specific and Heap is applications specific. (Each thread wil
 ### Recursion
 
 ### Dynamic Programming
-
+Dynamic Programming is a method for solving complex problems by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions using a memory-based data structure (array, map, hash, etc)
 
 ### Big O Time & Space Complexity 
