@@ -1,5 +1,10 @@
 # JavaScript
 
+### What are the 2 JS data types?
+There are primitives and there are objects. 
+Primitives include: Boolean, Null, undefined, number, string and symbol (ES6). Primitives have no methods and are simmmply not objects.
+Objects include 
+
 ### Proper key works for error handling in jS?
 "try...catch"
 
