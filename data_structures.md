@@ -10,8 +10,6 @@ Weighted, Unweighted, Directed, Undirected
 ## 3. What are some ways we might store a graph in memory? What space/time complexity problems might we face?
 Adjacency Linked Lists
 
-
-
 ### How do we define a graph mathematically?
 G = (V,E)
 
@@ -134,3 +132,10 @@ A BST that has its left and right children's height differ by no more than 1 and
 
 ### How does an AVL Tree self balance?
 Check height values and adjust on inserts while performing necessary rotations
+
+
+# Stacks
+
+# Queues / Priority Queue
+
+# Sets
