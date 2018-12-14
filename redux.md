@@ -56,3 +56,9 @@ A store in redux is essentially the collection of different reducers and action 
 
 ### Why use Redux?
 As our app becomes bigger, the complexity tends to exponentially rise. With Redux, our app might become more complex from the beginning, but as the application grows, the complexity looks more linear than exponential. 
+
+### What does the react-redux do?
+It allows us to combine and use both React and Redux libraries interchangibly. It's the connection to both ui frameworks.
+
+### Named export vs. defualt export?
+A named export allow us to export many different functions from a file. A default export only allows us to export one. export default 'name' doesn't need to be deconstructed when importing. Named exports do need to be deconstructed.
