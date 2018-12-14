@@ -63,5 +63,5 @@ It allows us to combine and use both React and Redux libraries interchangibly. I
 ### Named export vs. defualt export?
 A named export allow us to export many different functions from a file. A default export only allows us to export one. export default 'name' doesn't need to be deconstructed when importing. Named exports do need to be deconstructed.
 
-### Whats the point of the provider?
+### Whats the purpose of the provider?
 The provider esentially takes care of the store. Any component inside of the hierarchy can use the Connect function. The connect function is used communicate with the data inside the store. 
