@@ -45,9 +45,14 @@ It is going to change that data based on the contents of that action.
 ### What does the State property in Redux do?
 The state property in Redux is a central repository of all the information that has been created by our reducers. All of the information gets consolidated in our react object so that React has access to reach into the Redux part of our applciation and get the appropriate data. 
 
+### How do you modify the state?
+The only way to modify the state in your store is to dispatch and action creator to modify it. There is no way to modify it directly. 
+
 ### In reducers why do you always want to create a new array rather than modify an old one?
 You always want to create a new array rather than modifying a new one. This can be done with ...rest/splat operator.
 
 ### What is the Store in Redux?
 A store in redux is essentially the collection of different reducers and action creators.
 
+### Why use Redux?
+As our app becomes bigger, the complexity tends to exponentially rise. With Redux, our app might become more complex from the beginning, but as the application grows, the complexity looks more linear than exponential. 
