@@ -19,7 +19,24 @@ The purpose of an action is to describe some change that we want to make inside 
 The payload is what is bundled in your actions and passed around between reducers in your redux application.
 
 ### What does the dispatch function do?
-The dispatch function takes in some action, make copies of that object and then passes it on to a bunch of different places in our application. 
+The dispatch function takes in some action, make copies of that object and then passes it on to different places in our application. 
+
+```js
+
+const { createStore , combineReducers } = Redux;
+const ourDepartments = combineReducers({
+  accounting: accounting,
+  claimsHistory: claimsHistory,
+  policies: policies
+});
+const store = createStore(ourDepartments);
+
+store.dispatch(createPolicy('Alex', 20));
+store.dispatch(createPolicy('Nancy', 30));
+store.dispatch(createClaim('Nancy', 120));
+store.dispatch(deletePolicy('Bob'));
+console.log(store.getState()); // { accounting: 20, claimsHistory: [{...}], policies: ["Alex", "Nancy"]}
+```
 
 ### What does Reducers do?
 A reducer is a function that is responsible for taking in an action and some existing amount of data. It's going to process that action, make some changes to the data and return it so then it could be centralized in some other location.
@@ -32,4 +49,5 @@ The state property in Redux is a central repository of all the information that 
 You always want to create a new array rather than modifying a new one. This can be done with ...rest/splat operator.
 
 ### What is the Store in Redux?
-A store in redux 
+A store in redux is essentially the collection of different reducers and action creators.
+
