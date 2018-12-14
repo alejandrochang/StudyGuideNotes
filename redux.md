@@ -67,7 +67,7 @@ A named export allow us to export many different functions from a file. A defaul
 The providers single purpose is to "provide" the store inot its child components. The provider esentially wraps the entire applcation giving the accesbility to the store to all the components. 
 
 ### Whats the purpose of the Connect Function?
-The connect function maps the stores state and dispatches to the props of a component.
+The connect function maps the stores state and dispatches to the props of a component. It passes the JS functions and warps it in anothe function that connects to Redux. Without it, we wouldn't be able to communciate with Redux. 
 
 ### Accessing data in Redux?
 We can either retrieve data by obtaining its current state, or change its state by dispatching an action.
