@@ -54,6 +54,15 @@ Reducer Rules:
     -> You should worry about mutating an [] or an {}, strings and numbers are primitives( hence: immutable)
     Note: If you return the state the end of the function you're application won't update. It is only when you return a "modified" state that it updates.
 
+### What are good operation to do on Reducer to avoid mutating state?
+Removing an element from an array: state.filter((el) => el !== 'hi')
+Adding an elmeent to an array: [...state, 'hi']
+Replacing an element in an array:
+
+Updating a property in an object:
+Adding a property onto an object:
+Removing a property from an object:
+
 ### What does the State property in Redux do?
 The state property in Redux is a central repository of all the information that has been created by our reducers. All of the information gets consolidated in our react object so that React has access to reach into the Redux part of our applciation and get the appropriate data. 
 
