@@ -1,6 +1,15 @@
 # JavaScript
 
-### What are the 2 JS data types?
+### === ?
+```js
+  const numbers = [1, 2, 3, 4];
+  numbers === [1, 2, 3, 4] // false
+
+  // The comparison is not in the contents of the array, but instead where they're allocated in memory
+
+```
+
+### What are the two JS data types?
 There are primitives and there are objects. 
 Primitives include: Boolean, Null, undefined, number, string and symbol (ES6). Primitives have no methods and are simmmply not objects.
 Objects include 

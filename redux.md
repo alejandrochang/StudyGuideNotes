@@ -44,11 +44,15 @@ console.log(store.getState()); // { accounting: 20, claimsHistory: [{...}], poli
 A reducer is a function that is responsible for taking in an action and some existing amount of data. It's going to process that action, make some changes to the data and return it so then it could be centralized in some other location.
 It is going to change that data based on the contents of that action.
 
+The reducer takes in previous state + action.
+
 Reducer Rules:
 1. The one rule of reducers is that they cannot return undefined.
 2. Produces 'state' or data using only previou state and the action.
-3. 
-4. 
+3. Keep the reducer pure by never reaching out of the reducer.
+4. Dont mutate the 'state' (first) argument in a reducer.
+    -> You should worry about mutating an [] or an {}, strings and numbers are primitives( hence: immutable)
+    Note: If you return the state the end of the function you're application won't update. It is only when you return a "modified" state that it updates.
 
 ### What does the State property in Redux do?
 The state property in Redux is a central repository of all the information that has been created by our reducers. All of the information gets consolidated in our react object so that React has access to reach into the Redux part of our applciation and get the appropriate data. 
