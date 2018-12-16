@@ -44,6 +44,12 @@ console.log(store.getState()); // { accounting: 20, claimsHistory: [{...}], poli
 A reducer is a function that is responsible for taking in an action and some existing amount of data. It's going to process that action, make some changes to the data and return it so then it could be centralized in some other location.
 It is going to change that data based on the contents of that action.
 
+Reducer Rules:
+1. The one rule of reducers is that they cannot return undefined.
+2. Produces 'state' or data using only previou state and the action.
+3. 
+4. 
+
 ### What does the State property in Redux do?
 The state property in Redux is a central repository of all the information that has been created by our reducers. All of the information gets consolidated in our react object so that React has access to reach into the Redux part of our applciation and get the appropriate data. 
 
@@ -81,7 +87,7 @@ Axios helps us make network request.
 Redux-thunk is the middleware that helps us make request in a Redux application. It helps us deal with these aynchronous action creators. It helps us solve our async issues. 
 
 Normal rules with React allows action creators to return POJO's, but that's it. 
-With Redux-thunk we're action creators are allowed to return POJO's or a function. Redux-thunk automatically calls that function for you (which in most cases is obtaining/fetching data from an API). If it calls a function, it will call the 'dispatch' and 'getState' functions for you as well, eventually passing it down the middleware again.
+With Redux-thunk we're action creators are allowed to return POJO's or a function. Redux-thunk automatically calls that function for you (which in most cases is obtaining/fetching data from an API). If you dispatched an action thats a function, it will call the 'dispatch' and 'getState' functions for you as well, eventually passing it down the middleware again.
 
 With Redux thunk we can MANUALLY dispatch an action at some point in time in the future. 
 
