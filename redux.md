@@ -4,7 +4,9 @@
 A state management library, makes creating complex apps a little bit easier.
 
 ### What is the Redux Cycle?
-Action Creator -> Action -> Dispatch -> Reducers -> State
+Action Creator -> Action -> Dispatch -> Middleware -> Reducers -> State
+
+To change state in our app we call an action creator which produces an action, which gets fed to dispatch which forwards the action to middleware which sends the action to reducers and creates a new state. 
 
 ### What does the action creator do?
 The action creator is a function that is going to create or return a plain JS object. 
@@ -76,7 +78,7 @@ We can either retrieve data by obtaining its current state, or change its state 
 Axios helps us make network request. 
 
 ### What is Redux-thunk?
-Redux-thunk is the middleware that helps us make request in a Redux application.
+Redux-thunk is the middleware that helps us make request in a Redux application. It helps us deal with these aynchronous action creators. It helps us solve our async issues. 
 
 ### Redux data fetching (Components and Action Creators)
 Components are generally responsible for fetching data they need by calling an action creator. 
@@ -89,3 +91,6 @@ If no middleware is used, when babel transpiles your code it will return the req
 ### Synchronous Action Creator vs Asynchronous Action Creators
 A synchronous action creator returns an action with data ready to go (it will always pass data to reducers).
 An asynchronous action takes some amount of time for it to get its data ready to go.
+
+### What is middleware?
+A middleware is a plan JS function that is going to be called with every single action that you dispatch. Middleware has the ability to stop or modify an action.
