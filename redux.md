@@ -60,7 +60,7 @@ As our app becomes bigger, the complexity tends to exponentially rise. With Redu
 ### What does the react-redux do?
 It allows us to combine and use both React and Redux libraries interchangibly. It's the connection to both ui frameworks.
 
-### Named export vs. defualt export?
+### Named export vs. default export?
 A named export allow us to export many different functions from a file. A default export only allows us to export one. export default 'name' doesn't need to be deconstructed when importing. Named exports do need to be deconstructed.
 
 ### Whats the purpose of the provider?
@@ -82,3 +82,10 @@ Redux-thunk is the middleware that helps us make request in a Redux application.
 Components are generally responsible for fetching data they need by calling an action creator. 
 Action creators are responsible for making API request (This is where Redux-Thunk comes into play)
 We get fetched data into a component by generating new state in our redux store, then getting that data into our components through mapStateToProps.
+
+### If using async/await in your action creator what issues might you encounter?
+If no middleware is used, when babel transpiles your code it will return the request from the action creator. When the redux store looks to see what changed, it realizes that it is not a POJO, resulting in errors. What we want to return is the POJO from the fetching of the data. 
+
+### Synchronous Action Creator vs Asynchronous Action Creators
+A synchronous action creator returns an action with data ready to go (it will always pass data to reducers).
+An asynchronous action takes some amount of time for it to get its data ready to go.
