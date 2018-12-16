@@ -71,3 +71,14 @@ The connect function maps the stores state and dispatches to the props of a comp
 
 ### Accessing data in Redux?
 We can either retrieve data by obtaining its current state, or change its state by dispatching an action.
+
+### What is axios used for?
+Axios helps us make network request. 
+
+### What is Redux-thunk?
+Redux-thunk is the middleware that helps us make request in a Redux application.
+
+### Redux data fetching (Components and Action Creators)
+Components are generally responsible for fetching data they need by calling an action creator. 
+Action creators are responsible for making API request (This is where Redux-Thunk comes into play)
+We get fetched data into a component by generating new state in our redux store, then getting that data into our components through mapStateToProps.

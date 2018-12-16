@@ -1,5 +1,7 @@
 # WEB
 
+### Why should you use axios over fetch?
+Fetch requires you to not only to user the url that will fetch data, but it also handles errors differently then axios. Fetch will run, botht the catch() and then() functions even if there is an error, where as axios will handle the error correctly and only run the catch function.
 
 ### What are the three primary Fielding constraints? (Bonus if you can say who Fielding is!)
 Client-Server, Stateless, Uniform Interface
