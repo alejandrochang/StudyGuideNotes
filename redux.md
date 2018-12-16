@@ -10,7 +10,7 @@ To change state in our app we call an action creator which produces an action, w
 
 ### What does the action creator do?
 The action creator is a function that is going to create or return a plain JS object. 
-This plain JS object is referred to as the action.
+This plain JS object is referred to as the action which must have a TYPE and optionally can have a payload.
 
 ### What are the two things the Action has?
 The action has a type and a payload. The type: describes some change we want to make on our data.
@@ -79,6 +79,9 @@ Axios helps us make network request.
 
 ### What is Redux-thunk?
 Redux-thunk is the middleware that helps us make request in a Redux application. It helps us deal with these aynchronous action creators. It helps us solve our async issues. 
+
+Normal rules with React allows action creators to return POJO's, but that's it. 
+With Redux-thunk we're action creators are allowed to return POJO's or a function. Redux-thunk automatically calls that function for you (which in most cases is obtaining/fetching data from an API).
 
 ### Redux data fetching (Components and Action Creators)
 Components are generally responsible for fetching data they need by calling an action creator. 
