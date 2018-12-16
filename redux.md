@@ -81,7 +81,9 @@ Axios helps us make network request.
 Redux-thunk is the middleware that helps us make request in a Redux application. It helps us deal with these aynchronous action creators. It helps us solve our async issues. 
 
 Normal rules with React allows action creators to return POJO's, but that's it. 
-With Redux-thunk we're action creators are allowed to return POJO's or a function. Redux-thunk automatically calls that function for you (which in most cases is obtaining/fetching data from an API).
+With Redux-thunk we're action creators are allowed to return POJO's or a function. Redux-thunk automatically calls that function for you (which in most cases is obtaining/fetching data from an API). If it calls a function, it will call the 'dispatch' and 'getState' functions for you as well, eventually passing it down the middleware again.
+
+With Redux thunk we can MANUALLY dispatch an action at some point in time in the future. 
 
 ### Redux data fetching (Components and Action Creators)
 Components are generally responsible for fetching data they need by calling an action creator. 
