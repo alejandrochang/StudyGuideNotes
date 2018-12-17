@@ -76,7 +76,27 @@ Essentially the prototype chain is the chain of objects that are connected throu
 Either an Object or NULL
 
 ### What are the benefits of a Javascript closure?
-Closure allows a function to access variables from an enclosing scope even after it leaves the scope in which it was declared.
+Closure allows a function to access variables from an enclosing scope even after it leaves the scope in which it was declared. They're useful because they let you associate some data with the lexical environment. This is particularly useful with frontend development as we have a lot of event handling. This event handling can be handled through callbacks that make our page easily interactive. 
+```js
+  function makeSize(size) {
+    return function() {
+      document.body.style.fontSize = size + 'px';
+    }
+  }
+
+  let size12 = makeSize(12);
+  let size14 = makeSize(14);
+  let size16 = makeSize(16);
+
+  document.getElementById('size-12').onclick = size12;
+  document.getElementById('size-14').onclick = size14;
+  document.getElementById('size-16').onclick = size16;
+
+  <a href="#" id="size-12">12</a>
+  <a href="#" id="size-14">14</a>
+  <a href="#" id="size-16">16</a>
+
+```
 
 ### Formally define a Javascript closure
 Variables defined outside the scope of a function that are used in the function.
