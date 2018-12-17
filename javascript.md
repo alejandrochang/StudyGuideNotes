@@ -272,7 +272,7 @@ The overarching place where variables and functions are provided and shared betw
 <!-- WEEK 5 -->
 
 ### What is a Promise?
-A promise is a special JavaScript object that links “producing code” and the “consuming code” together
+A promise represents the eventual result of an asynchronous operation. It is a placeholder into which the successful result value or reason for failure will materialize.
 
 ### what arguments does the Promise object take?
 resolve, reject
