@@ -219,6 +219,34 @@ Rest is passed as the last argument in a function typically, while spread is use
 Losing "this"; bind returns a “bound variant” of function that fixes the context this and first arguments if given.
 Usually we apply bind to fix this in an object method, so that we can pass it somewhere.
 
+### How can we solve context issues in JavaScript?
+``` js
+var cat = {
+   name: "Gus",
+   color: "gray",
+   age: 15,
+ 
+   printInfo: function() {
+      var that = this; // 1
+      console.log("Name:", this.name, "Color:", this.color, "Age:", this.age); //prints correctly
+ 
+      nestedFunction = function() {
+         console.log("Name:", that.name, "Color:", that.color, "Age:", that.age); //prints correctly
+      }.bind(this); // 2
+
+      nestedFunction.call(this); // 
+      nestedFunction.apply(this) // 4
+
+   nestedFunction();
+   }
+}
+cat.printInfo();
+```
+
+You can assign this to a variable, typically 'that'.
+You can bind the context this.
+You can call/apply the context to this. 
+
 
 ### What is the syntax for passing arguments to the bind function?
 function.bind(context)
