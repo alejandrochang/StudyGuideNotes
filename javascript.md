@@ -1,5 +1,8 @@
 # JavaScript
 
+### What is lexical scoping?
+JavaScript has lexical scoping with function scope meaning a new scope is created with every new function created.
+
 ### What is reflection in Javascript?
 An object can look at itself, listing and changing its properties and methods.
 
@@ -50,16 +53,17 @@ DONT: The default "prototype" is an object with the only property constructor th
 DO: if we replace the default prototype as a whole, then there will be no "constructor" in it
 
 ### What is an object's default prototype?
-Obj.prototype = { constructor: Obj }
+Obj.prototype = { constructor: Obj } if it is a function.
+If its a regular object, the obj.prototype will be undefined.
 
 ### What is the prototype chain?
-Essentially the prototype chain is the chain of objects that are connected through their object prototype. The prototype chain is how objects inherit in javascript. 
+Essentially the prototype chain is the chain of objects that are connected through their object __proto_. The prototype chain is how objects inherit in javascript. 
 
 ### What are the valid values for an object's prototype?
 Either an Object or NULL
 
 ### What are the benefits of a Javascript closure?
-Closure allows a function to access variables from an enclosing scope even after it leaves the scope in which it was declared
+Closure allows a function to access variables from an enclosing scope even after it leaves the scope in which it was declared.
 
 ### Formally define a Javascript closure
 Variables defined outside the scope of a function that are used in the function.
@@ -87,15 +91,14 @@ elementary.getStaff()          // ["Seymour Skinner", "Edna Krabappel", "Otto Ma
 ## What is data encapsulation?
 the idea that some data or functions should not be directly exposed, it's hidden in the closure
 
-
 ### What is the difference between the memory heap and call stack in javascript?
 The heap is for memory allocation. The call stack is a list of things to do, one task at a time
 
 ### What is one problem with programming languages that a fully single-threaded
-It can only sun one thing at a time which can cause slowing
+It can only do one thing at a time which can cause slowing of any application.
 
 ###  Is Javascript a single-threaded language? Explain (Hint: This may not be a yes or no question)
-JS by itself is single-threaded, but HTML5 and Node have access to multi-threading behavior
+JS by itself is single-threaded, but HTML5 and Node have access to multi-threading behavior.
 
 ### When is using an IIFE necessary?
 An Immediate Invoked Function Expression (IIFE) is a function expression that is called immediately after you define it. It is usually used when you want to create a new variable scope.
@@ -124,7 +127,7 @@ console.log( result[3]() ); // 3
 
 
 ### In which phase does hoisting occur?
-Compilation phase
+Compilation phase.
 
 ### What is the difference between function hoisting and variable hoisting?
 Function declarations are completely hoisted. This means that a declared function can be called before it is defined.
@@ -140,6 +143,18 @@ Variables are partially hoisted. var declarations are hoisted but not its assign
 ### What type of function is invoked with the new keyword? What does this function return?
 Constructor Functions, returns an object
 
+### What is event bubbling?
+ Event bubbling relates to the order in which event handlers are called when one element is nested inside a second element, and both elements have registered listener for the same event (a click, for example)
+
+### The 3 phases of event propagation?
+Event Capture Phase:
+In this phase only the capturer listeners are called, namely, those listeners that were registered using a value of true for the third parameter of addEventListener. Only the capturers found on the path from the window to the event target parent are called.
+
+Event Target Phase: 
+In this phase all the listeners registered on the event target will be invoked, regardless of the value of their capture flag.
+
+Event Bubbling Phase:
+During the event bubbling phase only the non-capturers will be called. That is, only the listeners registered with a value of false for the third parameter of addEventListener()
 
 ### How can you stop event bubbling?
 event.stopPropagation()
@@ -160,7 +175,6 @@ Block Scope: ES5 only had function level scoping, ES6 gives you block level with
 Arrow Funtions: gives you lexical "this"
 Rest Parameters: lets you array functions on arguments
 Classes: helps translate to other OOP languages
-
 
 ### What are the steps of a try..catch block in Javascript?
 The code in TRY is run. IF there are no errors, CATCH is ignored. If an error does occur, ignore the rest of TRY and go to CATCH
