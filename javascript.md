@@ -1,5 +1,8 @@
 # JavaScript
 
+### What is reflection in Javascript?
+An object can look at itself, listing and changing its properties and methods.
+
 ### === ?
 ```js
   const numbers = [1, 2, 3, 4];
@@ -8,11 +11,11 @@
   // The comparison is not in the contents of the array, but instead where they're allocated in memory
 
 ```
-
 ### What are the two JS data types?
 There are primitives and there are objects. 
-Primitives include: Boolean, Null, undefined, number, string and symbol (ES6). Primitives have no methods and are simmmply not objects.
-Objects include 
+Primitives include: Boolean, Null, undefined, number, string and symbol (ES6). Primitives have no methods and are simply not objects.
+
+Everything else is an object.
 
 ### Proper key works for error handling in jS?
 "try...catch"
@@ -25,14 +28,19 @@ The above code prints out 2, as the .push() method returns the length of the arr
 
 ### What's the difference between asynchronous and synchronous API?
 A synchronous API waits for a response, and blocks everything else from happening in the application until that response is received. 
-An asynchronous API does not wait for a response, but instead asks to be notified when a response is available. As a result it does not block other
-functionality in the application from progressing. 
+An asynchronous API does not wait for a response, but instead asks to be notified when a response is available. As a result it does not block other functionality in the application from progressing. 
+
+### Classical vs Prototypal Inheritance?
+Classical inheritance is what more traiditional languages such as Java and C# use to give access to objects properties and methods of other objects. However classical inhertiance leads to coupling/dependencies of other objects as it is very verbose. Prototypal inhertiance is extensible and more flexible. 
+
+### What is inheritance?
+Inheritance is when one object gets access to the properties and methods of another object. 
 
 ### Give a high level overview of what an object's prototype represents
-A prototype is the class that an object inherits from
+A prototype is the object that an object inherits from.
 
 ### What are the differences between the __proto__ and prototype attributes?
-Obj.prototype is a property of a Function object. It is the prototype of objects constructed by that function.
+Obj.prototype is a property of a Function object that has a constructor that points back to itself. The __proto__ attribute is accesable by any object in JS which creates the prototype chain.
 
 Obj.__proto__ is internal property of an object, pointing to its prototype.
 
@@ -43,6 +51,9 @@ DO: if we replace the default prototype as a whole, then there will be no "const
 
 ### What is an object's default prototype?
 Obj.prototype = { constructor: Obj }
+
+### What is the prototype chain?
+Essentially the prototype chain is the chain of objects that are connected through their object prototype. The prototype chain is how objects inherit in javascript. 
 
 ### What are the valid values for an object's prototype?
 Either an Object or NULL

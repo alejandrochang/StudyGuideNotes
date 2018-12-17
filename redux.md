@@ -57,11 +57,11 @@ Reducer Rules:
 ### What are good operation to do on Reducer to avoid mutating state?
 Removing an element from an array: state.filter((el) => el !== 'hi')
 Adding an elmeent to an array: [...state, 'hi']
-Replacing an element in an array:
+Replacing an element in an array: state.map((el) => el === 'hi' ? bye : el)
 
-Updating a property in an object:
-Adding a property onto an object:
-Removing a property from an object:
+Updating a property in an object: {...state, name: 'Alejandro' }
+Adding a property onto an object: {...state, age: 30 }
+Removing a property from an object: 
 
 ### What does the State property in Redux do?
 The state property in Redux is a central repository of all the information that has been created by our reducers. All of the information gets consolidated in our react object so that React has access to reach into the Redux part of our applciation and get the appropriate data. 
