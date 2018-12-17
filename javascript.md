@@ -212,6 +212,8 @@ let arr1 = [1, -2, 3, 4];
 let arr2 = [8, 3, -8, 1];
 Math.max(...arr1, ...arr2) 
 
+Rest is passed as the last argument in a function typically, while spread is used in multiple different ways.
+
 
 ### What problem does bind solve in Javascript? How does it accomplish this?
 Losing "this"; bind returns a “bound variant” of function func that fixes the context this and first arguments if given.
