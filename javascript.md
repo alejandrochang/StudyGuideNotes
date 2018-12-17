@@ -216,8 +216,7 @@ Rest is passed as the last argument in a function typically, while spread is use
 
 
 ### What problem does bind solve in Javascript? How does it accomplish this?
-Losing "this"; bind returns a “bound variant” of function func that fixes the context this and first arguments if given.
-
+Losing "this"; bind returns a “bound variant” of function that fixes the context this and first arguments if given.
 Usually we apply bind to fix this in an object method, so that we can pass it somewhere.
 
 
