@@ -247,6 +247,8 @@ You can assign this to a variable, typically 'that'.
 You can bind the context this.
 You can call/apply the context to this. 
 
+Note: Call and apply invoke your function. 
+
 
 ### What is the syntax for passing arguments to the bind function?
 function.bind(context)
