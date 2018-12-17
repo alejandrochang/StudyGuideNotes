@@ -63,6 +63,12 @@ Updating a property in an object: {...state, name: 'Alejandro' }
 Adding a property onto an object: {...state, age: 30 }
 Removing a property from an object: 
 
+Using Lodash:
+const profile = { name: 'Alejandro' }
+_.omit(profile, 'name'); // will return {}
+
+DOES NOT MODIFY OUR OBJECT!
+
 ### What does the State property in Redux do?
 The state property in Redux is a central repository of all the information that has been created by our reducers. All of the information gets consolidated in our react object so that React has access to reach into the Redux part of our applciation and get the appropriate data. 
 
@@ -70,7 +76,7 @@ The state property in Redux is a central repository of all the information that 
 The only way to modify the state in your store is to dispatch and action creator to modify it. There is no way to modify it directly. 
 
 ### In reducers why do you always want to create a new array rather than modify an old one?
-You always want to create a new array rather than modifying a new one. This can be done with ...rest/splat operator.
+You always want to create a new array rather than modifying the state. This can be done with ...rest operator.
 
 ### What is the Store in Redux?
 A store in redux is essentially the collection of different reducers and action creators.
