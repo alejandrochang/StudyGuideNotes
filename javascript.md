@@ -1,5 +1,18 @@
 # JavaScript
 
+### What is the Event Loop?
+Is essentially what allows JavaScript to use callbacks and promises. 
+There are four components in the event loop: Heap, Call Stack, EventTable & EventQueue.
+
+Heap: Is used for memory allocation of differnet objects in unordered manner.
+
+Call Stack: When you're about to execute a function it is added to the call stack. Then if that function has an inner function that is stacked on the previous function and so forth. (LIFO)
+
+Ex. An example of this can be seen when you get an error in your console which shows you the path of execution
+
+EventTable & EventQueue: Every time you call a setTimeout function or perform an async operation it is added to the EventTable. Once that event occurs(timeout, click, mousemove) it sends a notice. The EventTable does not execute functions, it's sole purpose is to keep track of events and send them to the EventQueue. The EventQueue receives the order in which the functions should be executed. This is where the Event Loop comes in as it checks the Call Stack, if it is empty, then it looks into the EventQueue, if there is something there it will process it into the Call Stack and execute it. (FIFO)
+
+
 ### What is lexical scoping?
 JavaScript has lexical scoping with function scope meaning a new scope is created with every new function created.
 
@@ -247,7 +260,7 @@ You can assign this to a variable, typically 'that'.
 You can bind the context this.
 You can call/apply the context to this. 
 
-Note: Call and apply invoke your function. 
+Note: Call and apply invoke your function. x
 
 
 ### What is the syntax for passing arguments to the bind function?
