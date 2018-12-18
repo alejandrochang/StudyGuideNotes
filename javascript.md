@@ -179,6 +179,10 @@ Constructor Functions, returns an object
 ### What is event bubbling?
  Event bubbling relates to the order in which event handlers are called when one element is nested inside a second element, and both elements have registered listener for the same event (a click, for example)
 
+event.target – the deepest element that originated the event.
+event.currentTarget (=this) – the current element that handles the event (the one that has the handler on it)
+event.eventPhase – the current phase (capturing=1, bubbling=3).
+
 ### The 3 phases of event propagation?
 Event Capture Phase:
 In this phase only the capturer listeners are called, namely, those listeners that were registered using a value of true for the third parameter of addEventListener. Only the capturers found on the path from the window to the event target parent are called.
@@ -392,3 +396,5 @@ return a wrapper that allows a function to be called normally when all arguments
 ### Why might you use currying?
 currying allows both to keep the function callable normally and to get partials easily
 
+### What are template literals?
+${} template literals allow both multiline string and string interpolation.
