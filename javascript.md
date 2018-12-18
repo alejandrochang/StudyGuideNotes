@@ -238,7 +238,7 @@ let and const are not hoisted, var declarations are hoisted but not their assign
 
 
 ### What happens when you enable strict mode in javascript?
-You cannot create variables/functions without declaring them first, you cannot delete a variable/function once declared and assigned, 
+You cannot create variables/functions without declaring them first, you cannot delete a variable/functions once declared and assigned. 'This' holds the value of undefined in global functions and in anonymous functions that are not bound to any object. 
 
 ### How does the rest/spread operator work in JS?
 Rest (...args) can be passed into a function as a variable that accepts any number of arguments
@@ -284,7 +284,7 @@ You can assign this to a variable, typically 'that'.
 You can bind the context this.
 You can call/apply the context to this. 
 
-Note: Call and apply invoke your function. x
+Note: Call and apply invoke your function. 
 
 
 ### What is the syntax for passing arguments to the bind function?
@@ -388,7 +388,8 @@ Displays an interactive list of the properties of the specified JavaScript objec
 
 
 ### What is currying?
-translating a function from callable as f(a, b, c) into callable as f(a)(b)(c)
+Translating a function from callable as f(a, b, c) into callable as f(a)(b)(c).
+Function currying also known as partial function application is the use of a function that accepts one or more arguments that returns a new function with some of the arguments already set. 
 
 ### What extra features do you get when using lodash.curry?
 return a wrapper that allows a function to be called normally when all arguments are supplied or returns a partial otherwise
@@ -398,3 +399,6 @@ currying allows both to keep the function callable normally and to get partials 
 
 ### What are template literals?
 ${} template literals allow both multiline string and string interpolation.
+
+### What is a variadic function?
+Variadic functions are functions that accept any number of arguments instead of a fixed number of arguments. 
