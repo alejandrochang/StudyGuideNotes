@@ -159,17 +159,38 @@ Search: O(n)
 Insertion: O(1) - constant
 Deletion: O(1) - constant
 
-### Trees (binary trees and heaps)
-Access: O(log(n)
-Search: O(log(n)
-Insertion: O(log(n)
-Deletion: O(log(n)
+### Trees (Binary Search Tree)
+Access: O(log(n))
+Search: O(log(n))
+Insertion: O(log(n))
+Deletion: O(log(n))
+
+### HashTable
+Access: N/A
+Search: O(1)
+Insertion: O(1)
+Deletion: O(1)
 
 ### Graphs
 
 # Array Sorting Algoritms
 
 ### Binary Search
+Best: O(1)
+Avg: O(log(n))
+Worst: O(log(n))
+
 ### Bubble Sort 
+Best: O(n)
+Avg: O(n^2)
+Worst: O(n^2)
+
 ### Quick Sort
+Best: O(n log(n))
+Avg: O(n log(n))
+Worst: O(n^2)
+
 ### Merge Sort
+Best: O(n log(n))
+Avg: O(n log(n))
+Worst: O(n log(n))
