@@ -7,7 +7,7 @@
 
 Loading an external CSS files is the most commonly used and the best practice as it creates a separation for concerns.
 
-### What are the different type of selectors?
+### What are the different type of selectors and how to target them?
 The main different selectors include tags, classes and ID's.
 
 ```js
@@ -26,3 +26,6 @@ body { // tags
 
 ```
 
+### What are pseudo elements used for?
+
+### Why would you want to use a pre-processor like SASS?

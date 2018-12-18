@@ -133,9 +133,43 @@ A BST that has its left and right children's height differ by no more than 1 and
 ### How does an AVL Tree self balance?
 Check height values and adjust on inserts while performing necessary rotations
 
+# Data Structures Time Complexity and Space Complexity
+Data Structures have to consider four factors:
+Access, Search, Insertion, Deletion.
 
-# Stacks
+### Stacks
+Access: O(n)
+Search: O(n)
+Insertion: O(1) - constant
+Deletion: O(1) - constant
 
-# Queues / Priority Queue
+Methods: push, pop, peek, size (LIFO)
 
-# Sets
+### Queues / Priority Queue
+Access: O(n)
+Search: O(n)
+Insertion: O(1) - constant
+Deletion: O(1) - constant
+
+Methods: enueue, dequeue, isEmpty, front, size (FIFO)
+
+### Singly-Linked List & Doubly-Linked List
+Access: O(n)
+Search: O(n)
+Insertion: O(1) - constant
+Deletion: O(1) - constant
+
+### Trees (binary trees and heaps)
+Access: O(log(n)
+Search: O(log(n)
+Insertion: O(log(n)
+Deletion: O(log(n)
+
+### Graphs
+
+# Array Sorting Algoritms
+
+### Binary Search
+### Bubble Sort 
+### Quick Sort
+### Merge Sort
