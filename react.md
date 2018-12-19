@@ -9,6 +9,7 @@ They both work using promises, but async await has a few advantages to using it.
 ### Network Request and Fetchning Data, What are the two common ways of doing it?
 axios: a third partypackage
 fetch: built into modern browsers
+promises/async await
 
 ### Difference between uncontrolled and controlled component?
 Controlled components store their information inside React components such as the state instead of storing it into the DOM. 
@@ -38,7 +39,7 @@ Returning different jsx/content of component based on the state or props changin
 Super is a reference to the parents constructor function. That's why we call super on the constructor because the 'APP' Component or any component for that matter is initially referring to it's parent the React.Component.
 
 ### What is state?
-State is a JS object that containsata relevant to a component. If we want to get a single component to update itself we're going to update its state. 
+State is a JS object that contains data relevant to a component. If we want to get a single component to update itself we're going to update its state. 
 
 ### What are props?
 Props is a system for passing data from a parent component to a child component. The ultimate goal is customize or configure a child component. Either customize how the component looks or how the user interacts with it. 
@@ -76,7 +77,7 @@ Static files are typically in a public folder. Static files are never changing s
 Babel is a command-line tool that can take any version of JS and spit out a newer version. It allows us to use any JS so it is supported in any browser even if it's not up-to-date. 
 
 ### What is JSX and how is it used in React?
-JSX is a syntax-extension to JavaScript that has familiar syntax to HTML making it easy-to-use and incorporate both JSX and JS in one file. 
+JSX is a syntax-extension to JavaScript that has familiar syntax to HTML making it easy-to-use and incorporate both JSX and JS in one file. Java Serialization to XML.
 
 ### Difference between React and ReacDOM libraries?
 React knows what a component is and how to make components work together. 
