@@ -124,3 +124,8 @@ An asynchronous action takes some amount of time for it to get its data ready to
 
 ### What is middleware?
 A middleware is a plan JS function that is going to be called with every single action that you dispatch. Middleware has the ability to stop or modify an action.
+
+### What is memoization(_lodash) and what does it help with?
+Memoization allows us to only make on request to fetch data. Example: If we have to fetch data for users multiple times due to say comments (for each comment), with memoization we would only have to make the request once. Anytime we call it again in the future the function will not run again. This is only based on unique argument that are passed onto the function. 
+
+Helps stop the overfetching issue!!

@@ -1,5 +1,8 @@
 # React
 
+### What is a presentational component?
+A component that does not pass state.
+
 ### What are refs in React?
 Refs in react are essentially the way we use React to acces Nodes in the DOM, giving access to a single DOM element. 
 
