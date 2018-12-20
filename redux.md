@@ -129,3 +129,6 @@ A middleware is a plan JS function that is going to be called with every single 
 Memoization allows us to only make on request to fetch data. Example: If we have to fetch data for users multiple times due to say comments (for each comment), with memoization we would only have to make the request once. Anytime we call it again in the future the function will not run again. This is only based on unique argument that are passed onto the function. 
 
 Helps stop the overfetching issue!!
+
+### lodash methods:
+_.map(), _.uniq(), _.memoization(), _.chain() - chain is a special function in lodash that allows us to chain on a bunch of additional functions to manipulate data.
