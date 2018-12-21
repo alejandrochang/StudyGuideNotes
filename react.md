@@ -133,10 +133,29 @@ setState() does not always immediately update the component. It may defer until 
 
 forceUpdate() : If your component depends on some other data that does not include state/props update or your render() method you can achieve it by calling forceUpdate(). forceUpdate will cause render to be called on the component. 
 
-# Redux
+### CRUD (Create Read Update Destroy)
+Talking about different operations to perform on records inside an application. CRUD operations are pretty much in almost every single application.
 
-### How does a component get access to data in the Redux store?
-The component should be turned into a 'connected component' using a Redux container.
+### React Routers (different dependencty types)
+react-router: Core navigation lib - we don't install this manually (tipically)
+react-router-native: Navigation for react-native apps (native mobile applications)
+react-router-redux: Bindings between redux and react-router (not necessary)
 
-### Which of the following are principles of Redux?
-The state of the entire application is stored in an object/ state tree within a single store. State is read-opnly. The only way to change the state is to trigger an action. Changes are made with pure function.
+* react-router-dom: Navigation for dom-based apps (we will want to use this one almost always)
+The react-router-dom allows for navigation.
+
+### How does react-router-dom works ?
+
+
+### What does the BrowserRouter Component do?
+The BrowserRouter internally creates a history object. The history object keeps track of your address bar in your browser. The BrowserRouter listens to the 'history' object for changes to the URL. 
+
+### What is the path property, exact property and component property?
+The path property is used by react-router to determine whether or not it will show the component to the screen. The way it extracts information is by using extractedPath.contains(path). If you don't use exact it will show both '/' and '/example' as they're both technically in the path. Using exact will make the path do extractedPath === path which is what we want essentially.
+
+The component property allows you to specifiy which component you will be passing to which specific path.
+
+### Whats are the ways to transition to other pages and what is the best way?
+You can transition to other pages using the <a></a> anchor tag, however you don't want to do this as this doesn't work well with react-router-dom. If you user anchor tags the Broswer receives the index.html file and dumps the old HTML file it was showing. This is BAD as if you're fetching data etc, it will have to do it again. 
+
+You should handle navigation as

@@ -132,3 +132,9 @@ Helps stop the overfetching issue!!
 
 ### lodash methods:
 _.map(), _.uniq(), _.memoization(), _.chain() - chain is a special function in lodash that allows us to chain on a bunch of additional functions to manipulate data.
+
+### How does a component get access to data in the Redux store?
+The component should be turned into a 'connected component' using a Redux container.
+
+### Which of the following are principles of Redux?
+The state of the entire application is stored in an object/ state tree within a single store. State is read-opnly. The only way to change the state is to trigger an action. Changes are made with pure function.
