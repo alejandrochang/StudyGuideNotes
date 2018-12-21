@@ -168,8 +168,13 @@ A single page application is an application that loads a single document. When t
 - HashRouter: Uses everything after the # as the path. ex. localhost:3000/#/page2
 - MemoryRouter: Doesn't use the url to track navigation ex. localhost:3000/ With memory router the path doesn't change actively in your browser domain.
 
+A HashRouter is more flexible as it doesn't require special configuriation for your backend server. If you're doing a deployment to Github Pages USE HashRouter to always return the index.html file.
+
 ### Connection between Routers and Deployment?
 BrowserRouter is one of the most common ways to use to deploy your website. There a lot of websites that make it easy for you to deploy using BrowserROuter. However, if those options aren't accessable, it can be very difficult to deploy. 
 
 ### Difference between your development server and a traditional server?
 Your development server will serve up your index.html file if there is any errors with fetching a particular path or route, unlike a traditional server which will serve a 404 error of not found if there is no such path defined. 
+
+### What is bundle.js file?
+The bundle.js file has all the code for all of our application.
