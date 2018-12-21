@@ -160,5 +160,10 @@ You can transition to other pages using the <a></a> anchor tag, however you don'
 
 You should handle navigation using the Link tag: <Link to="/home">Home Page<Link/> tags as using this way react router prevents the browser from navigating to the new page and fetching the new index.html file. The url still changes -> the 'history' object sees the updated URL, takes URL and sends it to the BrowserRouter which communicates to the URL components. (Technically we are still making use of the <a> element on the screen using the <Link/>)
 
-### What is an SPA?
+### What is an SPA(Single Page Applications)?
 A single page application is an application that loads a single document. When the user navigates around the page we just demonstrate components based on their interaction with links. 
+
+### What are the three different types of routers that React has available?
+- BrowserRouter: React looks for the top level domain (TLD) (.com/.net) or port as the path. ex. localhost:3000/
+- HashRouter: Uses everything after the # as the path. ex. localhost:3000/#/page2
+- MemoryRouter: Doesn't use the url to track navigation ex. localhost:3000/
