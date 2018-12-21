@@ -166,4 +166,10 @@ A single page application is an application that loads a single document. When t
 ### What are the three different types of routers that React has available?
 - BrowserRouter: React looks for the top level domain (TLD) (.com/.net) or port as the path. ex. localhost:3000/
 - HashRouter: Uses everything after the # as the path. ex. localhost:3000/#/page2
-- MemoryRouter: Doesn't use the url to track navigation ex. localhost:3000/
+- MemoryRouter: Doesn't use the url to track navigation ex. localhost:3000/ With memory router the path doesn't change actively in your browser domain.
+
+### Connection between Routers and Deployment?
+BrowserRouter is one of the most common ways to use to deploy your website. There a lot of websites that make it easy for you to deploy using BrowserROuter. However, if those options aren't accessable, it can be very difficult to deploy. 
+
+### Difference between your development server and a traditional server?
+Your development server will serve up your index.html file if there is any errors with fetching a particular path or route, unlike a traditional server which will serve a 404 error of not found if there is no such path defined. 
