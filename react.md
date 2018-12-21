@@ -156,6 +156,6 @@ The path property is used by react-router to determine whether or not it will sh
 The component property allows you to specifiy which component you will be passing to which specific path.
 
 ### Whats are the ways to transition to other pages and what is the best way?
-You can transition to other pages using the <a></a> anchor tag, however you don't want to do this as this doesn't work well with react-router-dom. If you user anchor tags the Broswer receives the index.html file and dumps the old HTML file it was showing. This is BAD as if you're fetching data etc, it will have to do it again. 
+You can transition to other pages using the <a></a> anchor tag, however you don't want to do this as this doesn't work well with react-router-dom. If you user anchor tags the Broswer receives the index.html file and dumps the old HTML file it was showing. This is BAD as it will also dump all the data that you loaded into your react and redux application at the time. 
 
 You should handle navigation as
