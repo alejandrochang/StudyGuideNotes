@@ -199,3 +199,10 @@ Worst: O(n log(n))
 Linear: A data structure is linear if its elements form a sequence or a linear list. Examples: Array, Linked Lists, Stacks and Queues.
 
 Non-linear: A data structure is non-linear if traversal of nodes is non-linear by nature. Examples: Trees and Graphs
+
+### What are the various operations that can be performed on different Data Structures?
+Insertion: Add a new data item to an existing collection of data items.
+Deletion: Remove a data item from an existing collection of data items.
+Traversal: Access each data item exactly once so that it can be processed.
+Searching: Find out if the data item exists in the collection of data items.
+Sorting: Arranging the data items in some order.
