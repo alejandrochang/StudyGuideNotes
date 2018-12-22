@@ -194,3 +194,8 @@ Worst: O(n^2)
 Best: O(n log(n))
 Avg: O(n log(n))
 Worst: O(n log(n))
+
+### What are linear and non-linear data-structures?
+Linear: A data structure is linear if its elements form a sequence or a linear list. Examples: Array, Linked Lists, Stacks and Queues.
+
+Non-linear: A data structure is non-linear if traversal of nodes is non-linear by nature. Examples: Trees and Graphs
