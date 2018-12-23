@@ -65,7 +65,9 @@ Component Configuration refers to the ability for a component to be configured o
 Instead of using class use className for jsx. You want to avoid using class so you dont collide with class components. 
 
 ### What are the two different types of components in React?
-In React you can have functional components and class components. Functional components are easier for simple applications, class components are good for just about everything else. 
+In React you can have functional components/presentational and class components. Functional components are easier for simple applications, class components are good for just about everything else. 
+
+Functional Components don't have state or lifecycle methods, which is why they're also referred as stateless components.
 
 ### Difference between a require statement and an import statement? 
 The import statement looks into the node modules and imports it into the file. Import statements come from ES2015 Module System, the require statement comes from CommonJSModules system.  
