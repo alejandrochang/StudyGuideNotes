@@ -180,3 +180,10 @@ Your development server will serve up your index.html file if there is any error
 
 ### What is bundle.js file?
 The bundle.js file has all the code for all of our application.
+
+### OAuth 2.0
+User idenitification through a 3rd party (Google, Facebook, LinkedIn etc.)
+OAuth is not only about user authentication, but it is also about getting all the data that is associated with a particular user such as (gmail, etc.)
+
+What is a list of scopes?
+List of 'scopes' is the permission that you're granting a website to work.
