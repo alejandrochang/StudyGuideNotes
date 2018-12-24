@@ -191,3 +191,4 @@ List of 'scopes' is the permission that you're granting a website to work.
 ### OAuth for Servers vs. OAuth for JS Browser Apps
 OAuth for servers is usually used when we have an app that needs to access user data when the user is not logged in
 OAuth for JS Browser Apps is usually used when we have an app that needs to access user data only while the user is logged in.
+

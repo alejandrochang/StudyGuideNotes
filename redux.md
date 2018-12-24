@@ -138,3 +138,7 @@ The component should be turned into a 'connected component' using a Redux contai
 
 ### Which of the following are principles of Redux?
 The state of the entire application is stored in an object/ state tree within a single store. State is read-opnly. The only way to change the state is to trigger an action. Changes are made with pure function.
+
+### Debugging with redux dev tools?
+You can go to: localhost:3000/?debug_session=logged_in 
+This saves all data in your redux store between refreshes on a page.
