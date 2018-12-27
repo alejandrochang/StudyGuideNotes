@@ -8,6 +8,8 @@ With On-Premise companies all their hardware/servers has to be accessable within
 
 With AWS services your servers can be accessed on an on-demand basis. This allows for scalability and elasticity within the company. Scalability refers to the reality that as user-base grows, you have the ability to quickly access more servers to 'scale-up' extremely easy. Elasticity refers to the fact that you can grow, but you can also shrink as needed based on your company needs. 
 
+### What is AWS Compute Services?
+Compute Services in AWS is the umbrella of various different services that AWS provides. These services include Amazon EC2, Amazon EBS, Amazon Elastic Load Balancing and AWS Lambda.
 
 ### What is AWS Lambda?
 AWS lambda is a compute service that runs your back-end code which responds to events such as object uploads such as S3 buckets, updates to Amazon DynamoDB tables, data in Amazon Kinesis streams or in-app activity. 
