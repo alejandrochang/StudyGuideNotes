@@ -20,7 +20,7 @@ Lambda handles all the capacity, scaling, and the administration of the infrastr
 AWS Lambda is used to process images when they're uploaded adding images into S3 buckets. The images are processed and converted into thumbnails based on the device. 
 
 AWS Lambda can also be used to analyze social media data.
-Ex. Trending hashtags -> Social Data is added into Amazon Kinesis -> AWS Lambda is trigerred -> The data is stored into a database which can be used by busieness users.
+Ex. Trending hashtags -> Social Data is added into Amazon Kinesis -> AWS Lambda is trigerred -> The data is stored into a database which can be used by buiseness users.
 
 AWS & Containers
 AWS Lambda will make multiple request to multiple containers based on the needs of the application. With an increasing number of request, the number of containers is also increased, and when the request are reduced the number of containers is also reduced. So you pay for what you used saving money for the company. 
