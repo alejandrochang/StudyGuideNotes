@@ -2,6 +2,13 @@
 
 ## RECURSION
 
+### Recursion Tips (when implementing)
+
+1. Figure out the bare minimum pieces of information to represent your problem.
+2. Give reasonable defaults to the bare minimum pieces of info.
+3. Check the base case. Is there any work left to do? If not, return.
+4. Do some work. Call your function again, making sure the arguments have changed in some fashion.
+
 ### What is a base case in recursion? Why do we need one? Do we always need one?
 A base case is a solution to a given problem to build off. If no base case is given, a stack overflow happens.
 
