@@ -22,5 +22,8 @@ AWS Lambda is used to process images when they're uploaded adding images into S3
 AWS Lambda can also be used to analyze social media data.
 Ex. Trending hashtags -> Social Data is added into Amazon Kinesis -> AWS Lambda is trigerred -> The data is stored into a database which can be used by busieness users.
 
+AWS & Containers
+AWS Lambda will make multiple request to multiple containers based on the needs of the application. With an increasing number of request, the number of containers is also increased, and when the request are reduced the number of containers is also reduced. So you pay for what you used saving money for the company. 
+
 ### What are Cloud Containers?
 Cloud containers provide a streamline, easy-to-deploy and simple method of implementing specific infrastructure requirements. Containers create an isolation boundary at the application rather than the server level. This means that if anything goes wrong with a specific part of the application, it only affects that container and not the whole server. 
