@@ -15,3 +15,12 @@ Compute Services in AWS is the umbrella of various different services that AWS p
 AWS lambda is a compute service that runs your back-end code which responds to events such as object uploads such as S3 buckets, updates to Amazon DynamoDB tables, data in Amazon Kinesis streams or in-app activity. 
 
 Lambda handles all the capacity, scaling, and the administration of the infrastructure to run your code. It also provides visibility into performance with Amazon Cloud Watch. 
+
+### Where is Lambda used?
+AWS Lambda is used to process images when they're uploaded adding images into S3 buckets. The images are processed and converted into thumbnails based on the device. 
+
+AWS Lambda can also be used to analyze social media data.
+Ex. Trending hashtags -> Social Data is added into Amazon Kinesis -> AWS Lambda is trigerred -> The data is stored into a database which can be used by busieness users.
+
+### What are Cloud Containers?
+Cloud containers provide a streamline, easy-to-deploy and simple method of implementing specific infrastructure requirements. Containers create an isolation boundary at the application rather than the server level. This means that if anything goes wrong with a specific part of the application, it only affects that container and not the whole server. 
