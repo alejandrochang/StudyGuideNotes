@@ -6,15 +6,15 @@ Ask yourself: How much more processing power/time is required to run your algori
 
 Constant Time - O(1) - No matter how many elements we are working with, the algorithmic operation will always take the same amount of time.
 
-Logarithmic Time - O(log(n)) - 
+Logarithmic Time - O(log(n)) - You have this if doubling the number of elements you are iterating over doesn't double the amount of work. Always assume the searching operations are log(n) ex. bsearch
 
-Linear Time - O(n)
+Linear Time - O(n) - 
 
-Quasilinear Time - O(n * log(n))
+Quasilinear Time - O(n * log(n)) - 
 
-Quadratic Time - O(n^2)
+Quadratic Time - O(n^2) - 
 
-Exponential Time - O(2^n)
+Exponential Time - O(2^n) - 
 
 
 ## RECURSION
