@@ -14,8 +14,18 @@ Quasilinear Time - O(n * log(n)) - You have this if doubling the number of eleme
 
 Quadratic Time - O(n^2) - Every element in a collection has to be compared to every other element. ex. qNested for loops.
 
-Exponential Time - O(2^n) - If you add a single element to a collection, the processing power required doubles.
+Exponential Time - O(2^n) - If you add a single element to a collection, the processing power required doublese.
 
+### Identifying runtime complexity
+Iterating through a simple for loop for a single collection -> probably O(n)
+Iterating through half a collection -> O(n) there are no constants in runtime
+Iterating through two different collections with separate for loops -> O(n + m)
+Two nested for loops iterating through the same collection -> O(n^2)
+Two nested for loops iterating through different collections -> O(n * m)
+Sorting? -> O(n * log(n))
+Searching -> O(log(n)
+
+Two different collections of data typically revolve with using O(n) and O(m) together
 
 ## RECURSION
 
