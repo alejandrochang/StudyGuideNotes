@@ -6,8 +6,16 @@ Ask yourself: How much more processing power/time is required to run your algori
 
 Constant Time - O(1) - No matter how many elements we are working with, the algorithmic operation will always take the same amount of time.
 
-O(n) -> linear runtime
-O(n^2) -> quadratic runtime
+Logarithmic Time - O(log(n)) - 
+
+Linear Time - O(n)
+
+Quasilinear Time - O(n * log(n))
+
+Quadratic Time - O(n^2)
+
+Exponential Time - O(2^n)
+
 
 ## RECURSION
 
