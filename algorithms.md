@@ -8,7 +8,7 @@ Constant Time - O(1) - No matter how many elements we are working with, the algo
 
 Logarithmic Time - O(log(n)) - You have this if doubling the number of elements you are iterating over doesn't double the amount of work. Always assume the searching operations are log(n) ex. bsearch
 
-Linear Time - O(n) - 
+Linear Time - O(n) - Iterating through all elements in a collection of data. If you see for loop, you probably have linear time. 
 
 Quasilinear Time - O(n * log(n)) - 
 
