@@ -1,5 +1,8 @@
 # ALGORITHMS
 
+### Runtime Complexity
+Describes the performance of an algorithm.
+
 ## RECURSION
 
 ### Recursion Tips (when implementing)
