@@ -2,6 +2,7 @@
 
 ### Runtime Complexity
 Describes the performance of an algorithm.
+Ask yourself: How much more processing power/time is required to run your algorithm if we double the inputs?
 
 ## RECURSION
 
