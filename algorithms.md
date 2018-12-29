@@ -23,9 +23,12 @@ Iterating through two different collections with separate for loops -> O(n + m)
 Two nested for loops iterating through the same collection -> O(n^2)
 Two nested for loops iterating through different collections -> O(n * m)
 Sorting? -> O(n * log(n))
-Searching -> O(log(n)
+Searching a sorted array -> O(log(n)
 
 Two different collections of data typically revolve with using O(n) and O(m) together
+
+### Space Complexity
+How much more memory is required by doubling the problem set?
 
 ## RECURSION
 
