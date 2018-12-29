@@ -4,6 +4,11 @@
 Describes the performance of an algorithm.
 Ask yourself: How much more processing power/time is required to run your algorithm if we double the inputs?
 
+Constant Time - O(1) - No matter how many elements we are working with, the algorithmic operation will always take the same amount of time.
+
+O(n) -> linear runtime
+O(n^2) -> quadratic runtime
+
 ## RECURSION
 
 ### Recursion Tips (when implementing)
