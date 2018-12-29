@@ -10,9 +10,9 @@ Logarithmic Time - O(log(n)) - You have this if doubling the number of elements 
 
 Linear Time - O(n) - Iterating through all elements in a collection of data. If you see for loop, you probably have linear time. 
 
-Quasilinear Time - O(n * log(n)) - 
+Quasilinear Time - O(n * log(n)) - You have this if doubling the number of elements you are iterating over doesn't double the amount of work. Always assume that any sorting operation is n * log(n);
 
-Quadratic Time - O(n^2) - 
+Quadratic Time - O(n^2) - Every element in a collection has to be compared to every other element. ex. Nested for loops.
 
 Exponential Time - O(2^n) - 
 
