@@ -81,13 +81,6 @@ Installing file packages with dependencies
 ### What is a difference between Topological Sort and DFS?
 Topological sort prints out vertices in an order where no vertices come before their parent. DFS prints out one node's descendant nodes in succession with no regard to other nodes
 
-### On which types of Graphs can we do a topological sort?
-
-
-### What data structure do we use to assist with the topological sort algorithm?
-
-
-
 ### What are the constraints of (any type of) Heap?
 all of its nodes are in a specific order and the tree must be complete
 
@@ -206,3 +199,6 @@ Deletion: Remove a data item from an existing collection of data items.
 Traversal: Access each data item exactly once so that it can be processed.
 Searching: Find out if the data item exists in the collection of data items.
 Sorting: Arranging the data items in some order.
+
+### What are Data Structures?
+Data structures are ways of organizing information with optimal 'runtime complexity' for adding or removing records.
