@@ -202,3 +202,6 @@ Sorting: Arranging the data items in some order.
 
 ### What are Data Structures?
 Data structures are ways of organizing information with optimal 'runtime complexity' for adding or removing records.
+
+### Linked List (two properties by convention)
+The two properties by convention in a linked list are typically data and next.
