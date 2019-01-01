@@ -205,3 +205,17 @@ Data structures are ways of organizing information with optimal 'runtime complex
 
 ### Linked List (two properties by convention)
 The two properties by convention in a linked list are typically data and next.
+```js
+
+```
+
+### Trees 
+Traversla of a tree - iterating through a tree (different ways to accomplish this task)
+
+# BFS (Breadth First Traversal)
+Start from top and go from left to right. 
+
+# DFS (Depth First Traversal)
+Start from the bottom and go up and down checking every single child. 
+
+### Binary Search Tree

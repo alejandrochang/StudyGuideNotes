@@ -402,3 +402,5 @@ ${} template literals allow both multiline string and string interpolation.
 
 ### What is a variadic function?
 Variadic functions are functions that accept any number of arguments instead of a fixed number of arguments. 
+
+### ES5 Generators (iterator-authoring)
