@@ -219,3 +219,7 @@ Start from top and go from left to right.
 Start from the bottom and go up and down checking every single child. 
 
 ### Binary Search Tree
+Every node to the left is less than the parent node, every node to the right is greater than the parent node.
+
+### Binary Tree
+Consist that every parent has at minimum two children (nodes), the order of binary trees doesn't matter.
