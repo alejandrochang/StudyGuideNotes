@@ -11,6 +11,22 @@ The data modal is how you would build out a database. In the case of twitter, ho
 - Draw stuff (diagrams, mobile/browser)
 - Talk (Is there something specific that you would like me to focus on?)
 
+# Shortcuts to answer question
+- Draw a simple diagram
+1. Identify 2 core features
+2. Possible Implementation
+3. Identify and address difficulties
+4. Solutions for scaling
+
+Scaling for Users:
+- Caching - caching request from the database into a memory store(memcached or redis). Let's say that a user's tweets is an expensive operation as we organized the top tweets through an memory expensive algorithm. To make it more efficient we use a memory store that will hold our top 10 tweets, and be able to retrieve those to the user without accessing our db and without using that expensive operation. 
+
+User -> Server -> MemoryStore
+              -> Database
+
+Def: Doing the expensive work one time, storing the result and reusing that result when we need it again.
+- Deployment Options/Architecture - Maybe we are not allowed to satisfy 1,000,000 users with a single machine/server. We can create a load balancer. Whenever a user makes a request, it goes to our load balancer, the load balancer will randomly assign that request to anyone of our identical servers. (We can have many different servers that can handle the request.) This is also known as horizontal scaling. 
+
 ### Why should you use axios over fetch?
 Fetch requires you to not only to user the url that will fetch data, but it also handles errors differently then axios. Fetch will run, botht the catch() and then() functions even if there is an error, where as axios will handle the error correctly and only run the catch function.
 
