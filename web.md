@@ -1,5 +1,16 @@
 # WEB
 
+### How would you design twitter?
+High Level Notes:
+- There is no right answer
+- Every interviewer will expect a different answer
+- Focus is usually on the data model
+The data modal is how you would build out a database. In the case of twitter, how would you store tweets or how would you store users in the database. (Architecting out records in a database)
+- Don't mention specific technologies or frameworks/languages
+(Web user interface: "I would probably want to use a web framework on the front-end that would be easily built to support multiple tweets, maybe a framework that would have to work on mobile so users can access the page frequently from a mobile device.")  -> attributes of the technology you need to accomplish
+- Draw stuff (diagrams, mobile/browser)
+- Talk (Is there something specific that you would like me to focus on?)
+
 ### Why should you use axios over fetch?
 Fetch requires you to not only to user the url that will fetch data, but it also handles errors differently then axios. Fetch will run, botht the catch() and then() functions even if there is an error, where as axios will handle the error correctly and only run the catch function.
 
@@ -345,3 +356,4 @@ it is an enumerable set of numbers. those numbers can be mapped to other things,
 
 ### Explain the idea of an abstract class
 a datatype created to store specific information that will help solve an overall problem through object oriented programming
+
