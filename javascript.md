@@ -404,3 +404,7 @@ ${} template literals allow both multiline string and string interpolation.
 Variadic functions are functions that accept any number of arguments instead of a fixed number of arguments. 
 
 ### ES5 Generators (iterator-authoring)
+
+
+### What are REST conventions?
+Are a predefined system for defining routes that work with a given type of record. 
