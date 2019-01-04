@@ -405,7 +405,6 @@ Variadic functions are functions that accept any number of arguments instead of 
 
 ### ES5 Generators (iterator-authoring)
 
-
 ### What are REST conventions?
 Are a predefined system for defining routes that work with a given type of record. 
 
@@ -418,3 +417,10 @@ Update record                               PUT                             /str
 Delete a Record                             DELETE                          /streams/:id
 
 Following RESTful conventions allows for other engineers to make it easier to work with software that you design.
+
+Ex. You can use JSON SERVER: https://www.npmjs.com/package/json-server
+1. Create a db.json file
+2. Create your oject 'schema'
+3. Fetch your data through your actions/axios
+4. load data through componentDidMount
+5. use cat db.json to see the results of your objects
