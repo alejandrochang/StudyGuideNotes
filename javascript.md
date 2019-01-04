@@ -408,3 +408,12 @@ Variadic functions are functions that accept any number of arguments instead of 
 
 ### What are REST conventions?
 Are a predefined system for defining routes that work with a given type of record. 
+
+Action        |             Method           |              Route
+
+List all records -  GET - /streams
+Get one particular record -  GET - /streams/:id
+Create record  - POST - /streams
+Update record - PUT - /streams/:id
+Delete a Record - DELETE - /streams/:id
+
