@@ -16,14 +16,29 @@ Arguments are values you give your progrems that affect how it runs. (Essentiall
 
 Programming Languages spoken by computer processors. Every program you run on your computer has been converted (compiled) into machine code. * It is compiled INTO the machine language that YOUR computer speaks. All code eventually becomes machine code. Machine Code is very low level making it pretty difficult to understand. This is why we typically compile programming languages into machine code. As time has gone by the level of abstraction has increased creating higher level languages. 
 
-4. 
-5. 
+Machine Language -> Assembly Language -> C/C++ -> Javascript
 
+4. ECMACRIPT
+
+The standard javascript is based on. ECMA is the organization that basically standardizes the javascript that should be used accross browsers. 
+
+5. Javascript Engine
+
+A program that converts javascript code into something the computer processor can understand. V8 is a javascript engine, and it sits at the core of Node.js
+
+6. 
+
+7. 
+
+8. 
+
+9. 
 
 
 ### Notes by Section
 
-# Section 2: V8 The JavaScript Engine
+# Section 2: V8 The Javacript Engine
 
 Processors, Machine Code and C++.
-A microprocessor is a tiny machine that does work. Microprocessors typically speak one of these languages: IA-32, x86-64, ARM, MIPS. A processor is a physical thing thats a machine that accepts instructions and carries them out. 
+A microprocessor is a tiny machine that does work. Microprocessors typically speak one of these languages: IA-32, x86-64, ARM, MIPS. A processor is a physical thing thats a machine that accepts instructions and carries them out. Node is written in C++. The V8 JS Engine is written in C++. V8 is the thing that converts javascript into machine code.
+
