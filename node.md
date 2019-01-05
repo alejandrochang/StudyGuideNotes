@@ -12,6 +12,18 @@ A utility to type commands to your computer rathen than clicking. Some examples 
 
 Arguments are values you give your progrems that affect how it runs. (Essentially passing paramaters to a function).
 
-3. 
+3. Machine Code (Language) aka Machine Language
+
+Programming Languages spoken by computer processors. Every program you run on your computer has been converted (compiled) into machine code. * It is compiled INTO the machine language that YOUR computer speaks. All code eventually becomes machine code. Machine Code is very low level making it pretty difficult to understand. This is why we typically compile programming languages into machine code. As time has gone by the level of abstraction has increased creating higher level languages. 
+
 4. 
 5. 
+
+
+
+### Notes by Section
+
+# Section 2: V8 The JavaScript Engine
+
+Processors, Machine Code and C++.
+A microprocessor is a tiny machine that does work. Microprocessors typically speak one of these languages: IA-32, x86-64, ARM, MIPS. A processor is a physical thing thats a machine that accepts instructions and carries them out. 
