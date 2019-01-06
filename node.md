@@ -44,3 +44,6 @@ A microprocessor is a tiny machine that does work. Microprocessors typically spe
 
 V8 under the hood: (Google's v8 Engine)
 Looking inside the v8 documentation provided by google, you can see all the low level microprocessors code as well as all the C++ (.h and .cc files) that compile our code and turn it into machine code. It's just a lot of code that is very efficient and very good. 
+
+The power of the V8 engine. 
+You can also embed the V8 engine into your C++ code to allow other users to use Javascript to add code to whatever you're doing or working on. 
