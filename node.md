@@ -46,7 +46,7 @@ V8 under the hood: (Google's v8 Engine)
 Looking inside the v8 documentation provided by google, you can see all the low level microprocessors code as well as all the C++ (.h and .cc files) that compile our code and turn it into machine code. It's just a lot of code that is very efficient and very good. 
 
 The power of the V8 engine. 
-You can also embed the V8 engine into your C++ code to allow other users to use Javascript to add code to whatever you're doing or working on. Through embedding the V8 engine you give the power for javascript users to be able to do things only typically available to C++ code such as backend work (working with files, accessing databases), but with Javascript. This is incredibly powerful and how we get Node.js. V8 allows you to literraly create unique functions and syntax for javascript that is not specified in the ECMAScript.
+You can also embed the V8 engine into your C++ code to allow other users to use Javascript to add code to whatever you're doing or working on. Through embedding the V8 engine you give the power for javascript users to be able to do things only typically available to C++ code such as backend work (working with files, accessing databases), but with Javascript. This is incredibly powerful and how we get Node.js. V8 allows you to literraly create unique functions and syntax for javascript that is not specified in the ECMAScript. Allows for the extension of features to JS, V8 allows for that!!!
 
 Summary: 
 V8 is the engine that compiles the JS code into machine code for our microprocessors to read. Node.js is an extension of the V8 engine with additional C++ files that add features to JS such as back-end and server side use. 
