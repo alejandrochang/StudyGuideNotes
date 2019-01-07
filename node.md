@@ -26,7 +26,9 @@ The standard javascript is based on. ECMA is the organization that basically sta
 
 A program that converts javascript code into something the computer processor can understand. V8 is a javascript engine, and it sits at the core of Node.js
 
-6. 
+6. Client-Server Model of Computing
+
+The communication between the Client and the Server through a standard format which they both understand. Client request information from the server and the server responds. 
 
 7. 
 
@@ -50,3 +52,7 @@ You can also embed the V8 engine into your C++ code to allow other users to use 
 
 Summary: 
 V8 is the engine that compiles the JS code into machine code for our microprocessors to read. Node.js is an extension of the V8 engine with additional C++ files that add features to JS such as back-end and server side use. 
+
+# Section 3: The Node Core
+
+Server: At its most basic, is a computer that performs services. The client asks for those services and amy also do some work, but the server does the heavier amount of work. Client request some work -> Server responds with something. 
