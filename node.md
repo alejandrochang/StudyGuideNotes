@@ -32,7 +32,7 @@ The communication between the Client and the Server through a standard format wh
 
 7. Breakpoint
 
-A spot in our code where we tell a debugging tool to pause the execution of our code. 
+A spot in our code where we tell a debugging tool to pause the execution of our code. Use VS Code for debugging. 
 
 8. 
 
