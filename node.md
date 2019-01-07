@@ -56,3 +56,11 @@ V8 is the engine that compiles the JS code into machine code for our microproces
 # Section 3: The Node Core
 
 Server: At its most basic, is a computer that performs services. The client asks for those services and amy also do some work, but the server does the heavier amount of work. Client request some work -> Server responds with something. 
+
+What does JS need to manage a server? What does Node.js do?
+1. Better way to organize our code into reusable pieces.
+2. Ways to deal with files.
+3. Ways to deal with databases.
+4. The ability to communicate over the internet.
+5. The ability to accept requests and send responses. (standard format)
+6. A way to deal with work that takes a long time (asynchronous requests)
