@@ -11,3 +11,6 @@ Resource: /maps /api /gecode /json
 
 ### What is a Load Balancer?
 A load balancer is a device that distributes network or applcication traffic across a number of different servers. They're used to increase CAPACITY and RELIABILITIY of applications. 
+
+### What is a Cache Layer?
+A Cache layer can be memcache or redix (among others) helps store/cache data/information that has been previously requested for easy access in the future. This is specially important for specific fetching data that is constantly happening for a specific reason. 
