@@ -373,3 +373,11 @@ it is an enumerable set of numbers. those numbers can be mapped to other things,
 ### Explain the idea of an abstract class
 a datatype created to store specific information that will help solve an overall problem through object oriented programming
 
+
+Personal Notes on Common Questions:
+
+CSRF: In a form tag you can use an action. The action sets a request to a domain. CS
+
+SQL INJECTION: Instead of a script tag, you fetch databases hacking databases.
+
+Cross Site Scripting (XSS): Have an ID or any input tag using a script tag. Validating user inputs, not allowing users to put any HTML tags, blocking the user from inputing. Black/White input scripting. 

@@ -70,4 +70,3 @@ What does JS need to manage a server? What does Node.js do?
 The Node Core (C++ Core) is a core of features/utilities built in C++ made available to JS via the hooks in the V8 engine. Node.js accepts JS and allows 
 
 The JS Core is the core made up of features/utilities already built for you in JS to perform tasks. Most of those JS files are actually wrappers for the C++ code. (They get the code from the C++ files and they modify them using JS code)
-
