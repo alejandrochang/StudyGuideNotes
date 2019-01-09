@@ -376,8 +376,10 @@ a datatype created to store specific information that will help solve an overall
 
 Personal Notes on Common Questions:
 
-CSRF: In a form tag you can use an action. The action sets a request to a domain. CS
+CSRF: Is an attack that forces and end user to execute unwanted actions on a web applications in which they're currently authenticated in. This can be done via link/chat through email or website that the user clicks on or goes on to. With the help of social engineering is how the attacker may trick the users into doing malicious acts. 
 
 SQL INJECTION: Instead of a script tag, you fetch databases hacking databases.
 
-Cross Site Scripting (XSS): Have an ID or any input tag using a script tag. Validating user inputs, not allowing users to put any HTML tags, blocking the user from inputing. Black/White input scripting. 
+Cross Site Scripting (XSS): Is a type of security vulnerability found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by others. 
+
+Have an ID or any input tag using a script tag. Validating user inputs, not allowing users to put any HTML tags, blocking the user from inputing. Black/White input scripting. 
