@@ -53,10 +53,17 @@ Function expressions are possible because JS functions are first-class.
 
 12. Object
 
-Collectino of name/value pairs
+Collection of name/value pairs
 
-13. 
-14. 
+13. Inheritance
+
+When one object gets access to the properties and methods of another object. 
+
+14. Function Constructors
+
+A normal function that is used to construct objects. The 'this' variable points to a new empty object and that object is returned from the function automatically. Every new object creates an empty prototype object that it points too. You can add methods and functions to the object by using the .prototype and attaching it to the object. To see what properties and methods an object has you can look down its chain using the .__proto__.
+
+
 15. 
 16. 
 17. 
@@ -103,5 +110,18 @@ require('./greet') // to require other modules in the same directory
 // you can't access variables from another module unless you explicitly design it to do so
 
 module.exports = greet; // gives you direct access to the greet function
+
+// Objects and Object Literals
+var person = {
+  firstName: 'Alejandro',
+  lastName: 'Chang',
+  greet: function() {
+    console.log('Hello, ' + this.firstName + ' ' + this.lastName);
+  }
+}
+
+person.greet();
+
+console.log(person['firstName']) // Alejandro 
 ```
 
