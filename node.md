@@ -42,10 +42,13 @@ A reusable block of code whose existence does not accidently impact other code.
 
 An agreed upo standard for how code modules should be structured. 
 
-9. 
-9. 
-9. 
-9. 
+10. First-Class Function
+
+A first-class function is everything you can do with certain data types you can do with functions. For example, you can use functions like a string, array, numbers, pass them around through parameters, put them in arrays, objects etc.
+
+11. 
+12. 
+13. 
 
 
 ### Notes by Section
