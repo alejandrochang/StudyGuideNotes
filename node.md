@@ -51,8 +51,15 @@ A first-class function is the ability of everything you can do with certain data
 Function expression is just a block of code that results in a value. ex. let addition = function(a, b) { return a + b };
 Function expressions are possible because JS functions are first-class. 
 
-12. 
+12. Object
+
+Collectino of name/value pairs
+
 13. 
+14. 
+15. 
+16. 
+17. 
 
 
 ### Notes by Section
@@ -89,4 +96,12 @@ The JS Core is the core made up of features/utilities already built for you in J
 
 # Section 4: Modules, Exports and Require
 
-A module is a resuable block of code that does not affect other code accidently. 
+A module is a resuable block of code that does not affect other code accidently. With module exports you can expose functions, classes etc, data structures. 
+
+```js
+require('./greet') // to require other modules in the same directory
+// you can't access variables from another module unless you explicitly design it to do so
+
+module.exports = greet; // gives you direct access to the greet function
+```
+
