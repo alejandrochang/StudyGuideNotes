@@ -46,7 +46,11 @@ An agreed upo standard for how code modules should be structured.
 
 A first-class function is everything you can do with certain data types you can do with functions. For example, you can use functions like a string, array, numbers, pass them around through parameters, put them in arrays, objects etc.
 
-11. 
+11. Function Expression
+
+Function expression is just a block of code that results in a value. ex. let addition = function(a, b) { return a + b };
+Function expressions are possible because JS functions are first-class. 
+
 12. 
 13. 
 
