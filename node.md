@@ -34,7 +34,9 @@ The communication between the Client and the Server through a standard format wh
 
 A spot in our code where we tell a debugging tool to pause the execution of our code. Use VS Code for debugging. 
 
-8. 
+8. Module
+
+A reusable block of code whose existence does not accidently impact other code. 
 
 9. 
 
