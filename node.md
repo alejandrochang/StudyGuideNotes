@@ -40,7 +40,7 @@ A reusable block of code whose existence does not accidently impact other code.
 
 9. Common JS Modules
 
-An agreed upo standard for how code modules should be structured. 
+An agreed upon standard for how code modules should be structured. 
 
 10. First-Class Function
 
@@ -81,7 +81,9 @@ A standard for structuring data that is inspired by javascript object literals. 
 
 Exposing only the properties and methods you want via a returned object. A very common and clean way to structure and protect code within modules. 
 
-19. 
+19. Events
+
+Something that happns in our app that we can respond too. In Nod we actually talk about two different kind of events.
 
 20. 
 
@@ -178,3 +180,12 @@ ES6 Syntax:
   import * as greeter from './greet';
   greeter.greet();
 ```
+
+# Section 5: Events and the Event Emitter
+
+Two types of Events:
+1. System Events:
+This comes from the C++ side of the Node.js Core thanks to a library called libuv. Events coming from the computer system. 
+
+2. Custom Events:
+They're inside the Javascript Core. Events that we can create for ourself. This is the Event Emitter.
