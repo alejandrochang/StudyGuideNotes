@@ -167,3 +167,14 @@ Always use module.exports > exports, it's less code and protects you from some b
 
 Core Modules: Node.js has core modules that help engineers do a variety of things with handy methods and properties. You can find the documentation here: https://nodejs.org/api/index.html
 
+ES6 Syntax:
+```js
+  // greet.js
+  export function greet() {
+    console.log('Hello');
+  }
+
+  // app.js
+  import * as greeter from './greet';
+  greeter.greet();
+```
