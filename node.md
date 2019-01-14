@@ -5,87 +5,78 @@ Being a good Node.js developer is being a great JavaScript developer.
 ### Words in Node.js and their descriptions
 
 1. CLI (Command Line Interface):
-
 A utility to type commands to your computer rathen than clicking. Some examples include: Bash on Linux, Terminal on Mac,Command Prompt on Windows, and other replacements... The opposite to the command line is the GUI (Graphical User Interface). Mac typically uses -bash as it has a Linux core. 
 
 2. Arguments:
-
 Arguments are values you give your progrems that affect how it runs. (Essentially passing paramaters to a function).
 
 3. Machine Code (Language) aka Machine Language
-
 Programming Languages spoken by computer processors. Every program you run on your computer has been converted (compiled) into machine code. * It is compiled INTO the machine language that YOUR computer speaks. All code eventually becomes machine code. Machine Code is very low level making it pretty difficult to understand. This is why we typically compile programming languages into machine code. As time has gone by the level of abstraction has increased creating higher level languages. 
 
 Machine Language -> Assembly Language -> C/C++ -> Javascript
 
 4. ECMACRIPT
-
 The standard javascript is based on. ECMA is the organization that basically standardizes the javascript that should be used accross browsers. 
 
 5. Javascript Engine
-
 A program that converts javascript code into something the computer processor can understand. V8 is a javascript engine, and it sits at the core of Node.js
 
 6. Client-Server Model of Computing
-
 The communication between the Client and the Server through a standard format which they both understand. Client request information from the server and the server responds. 
 
 7. Breakpoint
-
 A spot in our code where we tell a debugging tool to pause the execution of our code. Use VS Code for debugging. 
 
 8. Module
-
 A reusable block of code whose existence does not accidently impact other code. 
 
 9. Common JS Modules
-
 An agreed upon standard for how code modules should be structured. 
 
 10. First-Class Function
-
 A first-class function is the ability of everything you can do with certain data types you can do with functions. For example, you can use functions like a string, array, numbers, pass them around through parameters, put them in arrays, objects etc.
 
 11. Function Expression
-
 Function expression is just a block of code that results in a value. ex. let addition = function(a, b) { return a + b };
 Function expressions are possible because JS functions are first-class. 
 
 12. Object
-
 Collection of name/value pairs
 
 13. Inheritance
-
 When one object gets access to the properties and methods of another object. 
 
 14. Function Constructors
-
 A normal function that is used to construct objects. The 'this' variable points to a new empty object and that object is returned from the function automatically. Every new object creates an empty prototype object that it points too. You can add methods and functions to the object by using the .prototype and attaching it to the object. To see what properties and methods an object has you can look down its chain using the .__proto__.
 
 
 15. Primitives in JS
-
 Primitives in JS include strings, numbers, booleans, null, undefined. Everything else is an object. 
 
 16. Scope
-
 Where in code you have access to a particular function or variables. 
 
 
 17. JSON (JS Object Notation)
-
 A standard for structuring data that is inspired by javascript object literals. JS engines are built to understand it. 
 
 18. Revealing Module Pattern
-
 Exposing only the properties and methods you want via a returned object. A very common and clean way to structure and protect code within modules. 
 
 19. Events
-
 Something that happns in our app that we can respond too. In Nod we actually talk about two different kind of events.
 
-20. 
+20. Event Listener
+The code that responds to an event. Node.js just like the DOM uses an event emmitter to handle events in respects to its type case by case. You can create your own emitter easily which is powerful as it gives a control flow with callbacks and asynchronous code.
+
+21. Magic String
+A string that has some special meaning in our code. (This is bad becuase it makes it easy for a typo and bugs in our code). A nice module pattern for helping avoid bugs and string issues through a config.js module.
+
+22. 
+23. 
+24. 
+25. 
+26. 
 
 
 ### Notes by Section
