@@ -162,3 +162,8 @@ Module Patterns:
 4. Revealing Module Pattern
 
 Module caches youre require calls for whatever files you are importing into so you can use the same object across all of your application. By using Module Pattern 4, you can create new objects in your module and they will point to different parts in memory.
+
+Always use module.exports > exports, it's less code and protects you from some bugs. 
+
+Core Modules: Node.js has core modules that help engineers do a variety of things with handy methods and properties. You can find the documentation here: https://nodejs.org/api/index.html
+
