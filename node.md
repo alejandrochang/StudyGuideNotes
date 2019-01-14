@@ -64,9 +64,26 @@ When one object gets access to the properties and methods of another object.
 A normal function that is used to construct objects. The 'this' variable points to a new empty object and that object is returned from the function automatically. Every new object creates an empty prototype object that it points too. You can add methods and functions to the object by using the .prototype and attaching it to the object. To see what properties and methods an object has you can look down its chain using the .__proto__.
 
 
-15. 
-16. 
-17. 
+15. Primitives in JS
+
+Primitives in JS include strings, numbers, booleans, null, undefined. Everything else is an object. 
+
+16. Scope
+
+Where in code you have access to a particular function or variables. 
+
+
+17. JSON (JS Object Notation)
+
+A standard for structuring data that is inspired by javascript object literals. JS engines are built to understand it. 
+
+18. Revealing Module Pattern
+
+Exposing only the properties and methods you want via a returned object. A very common and clean way to structure and protect code within modules. 
+
+19. 
+
+20. 
 
 
 ### Notes by Section
@@ -125,3 +142,23 @@ person.greet();
 console.log(person['firstName']) // Alejandro 
 ```
 
+IIFE (Immediately Invoked Function Expressions) - A big part of what happens behind the scenes with modules, exports and require. As they have everything to do with modules and accesability and encapsulation/protection of other files that you don't want to be impacted. Node.js takes advantage of IIFE as it protects data/encapsulates data which is something modules do as well.
+
+Modules more in depth: Everytime you create a module it creates a new Module object which is attached with properties and methods. One of the properties is the exports method which is assigned to an empty object initially. Once it has your actual module it's going to load the contents of your file. If you don't provide an extension, it will assume it is a '.js' file, that's how it knows. If you ever have to require a file that is not a 'js' file you have to include the extension. Then it officially sends it to the V8 engine thorugh the compile property. During this process it wraps your code into a string of a function expression, which shortly after is immediately invoked. Module.exports is what is given back from require. 
+
+Summary:
+1. require is a function that you pass on a 'path' too.
+2. module.exports is what that require function returns 
+
+Overview: Modules are wraped in a function expression with paramaters (function (exports, require, module, _filename, _dirname){ your file });
+
+Require turns JSON string into an object. ex. require('./greetings.json');
+
+Module Patterns: 
+1. Replacing the empty objust module.export = { // whatever }
+2. Adding a method to the exports object.
+3. Creating a new object using the new Object syntax
+4. Creating a new object, but passing it along as constructor to your module
+4. Revealing Module Pattern
+
+Module caches youre require calls for whatever files you are importing into so you can use the same object across all of your application. By using Module Pattern 4, you can create new objects in your module and they will point to different parts in memory.
