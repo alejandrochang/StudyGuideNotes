@@ -72,7 +72,9 @@ The code that responds to an event. Node.js just like the DOM uses an event emmi
 21. Magic String
 A string that has some special meaning in our code. (This is bad becuase it makes it easy for a typo and bugs in our code). A nice module pattern for helping avoid bugs and string issues through a config.js module.
 
-22. 
+22. Template Literals
+A way to concatenate strings in JS ES6.
+
 23. 
 24. 
 25. 
@@ -180,3 +182,14 @@ This comes from the C++ side of the Node.js Core thanks to a library called libu
 
 2. Custom Events:
 They're inside the Javascript Core. Events that we can create for ourself. This is the Event Emitter.
+
+The Node Event Emitter comes with on(), emit() and many more methods and properties. By using a config.js file where we place our 'magic strings' we avoid bugs with code that would be hard to decipher, as our magic strings become variables which our code editors can distinguish. 
+
+Object.create() is a very simple, clean and clear way to set up a sequence of objects, of objects that inherit from one another, a prototype chain. This idea of setting this up is key to understanding the Event Emitter and many mother pieces of Node.js.
+
+Prototypal Inheritance: Can be achieved through the function contructor of an object, ES6 extends class inheritance and Object.create().
+
+**Inherting From the Event Emitter**
+The Event Emitter uses internally Object.create() to create an empty object __proto__ that points down to the object you want to inherit from. Many objects built into Node are a type of event emitter. 
+
+Object Literals are useful for call and apply, binding the contest of a particular function.
