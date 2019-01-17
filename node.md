@@ -101,7 +101,7 @@ V8 is the engine that compiles the JS code into machine code for our microproces
 
 # Section 3: The Node Core
 
-Server: At its most basic, is a computer that performs services. The client asks for those services and any also do some work, but the server does the heavier amount of work. Client request some work -> Server responds with something. 
+Server: At its most basic, is a computer that performs services. The client asks for those services and ay also do some work, but the server does the heavier amount of work. Client request some work -> Server responds with something. 
 
 What does JS need to manage a server? What does Node.js do?
 1. Better way to organize our code into reusable pieces.
@@ -141,7 +141,7 @@ console.log(person['firstName']) // Alejandro
 
 IIFE (Immediately Invoked Function Expressions) - A big part of what happens behind the scenes with modules, exports and require. As they have everything to do with modules and accesability and encapsulation/protection of other files that you don't want to be impacted. Node.js takes advantage of IIFE as it protects data/encapsulates data which is something modules do as well.
 
-Modules more in depth: Everytime you create a module it creates a new Module object which is attached with properties and methods. One of the properties is the exports method which is assigned to an empty object initially. Once it has your actual module it's going to load the contents of your file. If you don't provide an extension, it will assume it is a '.js' file, that's how it knows. If you ever have to require a file that is not a 'js' file you have to include the extension. Then it officially sends it to the V8 engine thorugh the compile property. During this process it wraps your code into a string of a function expression, which shortly after is immediately invoked. Module.exports is what is given back from require. 
+Modules more in depth: Everytime you create a module it creates a new Module object which is attached with properties and methods. One of the properties is the exports method which is assigned to an empty object initially. Once it has your actual module it's going to load the contents of your file. If you don't provide an extension, it will assume it is a '.js' file, that's how it knows. If you ever have to require a file that is not a 'js' file you have to include the extension. Then it officially sends it to the V8 engine through the compile property. During this process it wraps your code into a string of a function expression, which shortly after is immediately invoked. Module.exports is what is given back from require. 
 
 Summary:
 1. require is a function that you pass on a 'path' too.
