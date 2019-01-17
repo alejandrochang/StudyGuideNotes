@@ -75,7 +75,9 @@ A string that has some special meaning in our code. (This is bad becuase it make
 22. Template Literals
 A way to concatenate strings in JS ES6.
 
-23. 
+23. Syntactic Sugar
+A feature that only changes how you type something, but nothing changes under hood
+
 24. 
 25. 
 26. 
@@ -193,3 +195,4 @@ Prototypal Inheritance: Can be achieved through the function contructor of an ob
 The Event Emitter uses internally Object.create() to create an empty object __proto__ that points down to the object you want to inherit from. Many objects built into Node are a type of event emitter. 
 
 Object Literals are useful for call and apply, binding the contest of a particular function.
+
