@@ -76,7 +76,7 @@ A string that has some special meaning in our code. (This is bad becuase it make
 A way to concatenate strings in JS ES6.
 
 23. Syntactic Sugar
-A feature that only changes how you type something, but nothing changes under hood
+A feature that only changes how you type something, but nothing changes under hood.
 
 24. 
 25. 
@@ -101,7 +101,7 @@ V8 is the engine that compiles the JS code into machine code for our microproces
 
 # Section 3: The Node Core
 
-Server: At its most basic, is a computer that performs services. The client asks for those services and amy also do some work, but the server does the heavier amount of work. Client request some work -> Server responds with something. 
+Server: At its most basic, is a computer that performs services. The client asks for those services and any also do some work, but the server does the heavier amount of work. Client request some work -> Server responds with something. 
 
 What does JS need to manage a server? What does Node.js do?
 1. Better way to organize our code into reusable pieces.
