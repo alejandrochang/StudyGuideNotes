@@ -223,3 +223,15 @@ Object Literals are useful for call and apply, binding the contest of a particul
 
 # Section 6: Asynchronous Code, libuv, The Event Loop, Streams, Files, and more…
 Synchronous vs. Asynchronous: Asynchronous is basicall
+
+The Event Loop - The Event Loop is what allows JS to become asynchronous. Through the EL, at its most basic JS uses a call stack, a heap(for memory allocation) and a queue. The call stack executes everything in JS that is synchronous, while all the events are placed on a queue for processing. Once the call stack is empty, the callstacks starts running asynchronous events one by one.
+
+Summary: We are running synchronous JS while inside the C++ core of Node asynchronous processes are being handled.  
+
+Buffer and Streams - In Node.js, stream and buffers refer to the idea of data being streamed a little bit at a time into a buffer which will allows us to process the data/stream in chunks. Ex. Netflix
+
+Characters -> Character Sets(Unicode / ASCII) -> Character Encoding (binary data: 101010 )
+JS is pretty bad at character encoding. Luckily due to the help of the V8 JS engine it helps us be able to process character encodings. 
+
+Character Set - Numbers to letters
+Character Encoding - Numbers in base 10 to Numbers in base 2
