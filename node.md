@@ -78,8 +78,16 @@ A way to concatenate strings in JS ES6.
 23. Syntactic Sugar
 A feature that only changes how you type something, but nothing changes under hood.
 
-24. 
-25. 
+24. Asynchronous: More than one process running simultaneously. Synchronous: only one process running at a time. 
+
+25. Callback: A function passed to some other function, which we assume will be invoked at some point. 
+
+26. Non-blocking
+Doing other things without stopping your programming from running. 
+
+26. 
+26. 
+26. 
 26. 
 
 
@@ -196,3 +204,5 @@ The Event Emitter uses internally Object.create() to create an empty object __pr
 
 Object Literals are useful for call and apply, binding the contest of a particular function.
 
+# Section 6: Asynchronous Code, libuv, The Event Loop, Streams, Files, and more…
+Synchronous vs. Asynchronous: Asynchronous is basicall
