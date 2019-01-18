@@ -100,11 +100,21 @@ A representation of characters as numbers. Each char gets a number (Unicode and 
 31. Character Encoding
 How characters are stored in binary
 
-32. 
+32. Error-first Callback
+An error first callback is any callback that that takes an error object as its first parameter (This is a standard).
 
-33. 
+33. Chunk
+A piece of data being sent through a stream.
+
 34. 
+
 35. 
+
+36. 
+
+37. 
+
+38. 
 
 
 
@@ -235,3 +245,9 @@ JS is pretty bad at character encoding. Luckily due to the help of the V8 JS eng
 
 Character Set - Numbers to letters
 Character Encoding - Numbers in base 10 to Numbers in base 2
+Byte: 8 bits - 8 zeroes and ones
+
+Files and Fs - asynchronous vs. synchronous 
+Always lean towards the asynchronous approach. As your files get bigger and your users increase you want to be able to deliver the best experience possible. This is done through the Event Loop and through using asynchronous operations. It will make it more performant and make it seem faster. 
+
+Streams:
