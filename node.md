@@ -85,10 +85,26 @@ A feature that only changes how you type something, but nothing changes under ho
 26. Non-blocking
 Doing other things without stopping your programming from running. 
 
-26. 
-26. 
-26. 
-26. 
+27. Buffer
+A temporary holding spot for data being moved from one place to another. (Store it there temporary, intentionally limited in size).
+
+28. Stream
+A sequence of data made available over time.(pieces of data that eventually combine into a whole). E.g Think of streaming Netflix, you process data as you watch a show/movie.
+
+29. Binary Data
+Data stored in binary (sets of 1s and 0s).
+
+30. Character Set
+A representation of characters as numbers. Each char gets a number (Unicode and ASCII are character sets).
+
+31. 
+
+32. 
+
+33. 
+34. 
+35. 
+
 
 
 ### Notes by Section
