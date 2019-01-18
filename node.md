@@ -97,7 +97,8 @@ Data stored in binary (sets of 1s and 0s).
 30. Character Set
 A representation of characters as numbers. Each char gets a number (Unicode and ASCII are character sets).
 
-31. 
+31. Character Encoding
+How characters are stored in binary
 
 32. 
 
