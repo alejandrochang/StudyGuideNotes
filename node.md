@@ -106,15 +106,52 @@ An error first callback is any callback that that takes an error object as its f
 33. Chunk
 A piece of data being sent through a stream.
 
-34. 
+34. Abstract (Base) Class
+A type of constructor you never work directly with, but inherit from. E.x streams 
 
-35. 
+35. Protocol
+A set of rules two sides agree on when communicating. Both the client and the server are programmed to understand and use that particular set of rules. 
 
-36. 
+36. IP/TCP
+Internet Protocol and Transmission Control Protocol
 
-37. 
+37. HTTP (HyperText Transfer Protocol)
+A set of rules (and a format) for data being transferred on the web. One of various formats that defines data being trasferred via IP/TCP. The core of how we send information through the web.
 
-38. 
+38. MIME Type
+A standard for specifying the type of data being sent. Examples include: app/json, text/html, image/jpeg
+
+39. Endpoint
+One URL in a web api. Sometimes that endpoint(url) does multiple things by making choices based on the HTTP request headers. 
+
+40. Serialize
+Translating an object into format that can be stored or transferred. (JSON, XML). Deserialize is the opposite, converting the format back into an object. 
+
+41. Routing
+Mapping HTTP Request to Content. (Whether actual files exist on the server or not)
+
+42. Package
+A collection of code that it is managed and maintained ina  system
+
+43. Package Managed System
+Software that automates installing and updating packages
+
+44. Dependency
+Code that another set of code depends on to function 
+
+45. Environment Variables
+Global Variables specific to the environment our code lives in. 
+
+46. Middleware
+Code that sits between two layers of software. In the case of Express, it sits between the request and the response. 
+
+46. REST - Representational State Transfer
+An architectural style for building API's. We decide that HTTP verbs and urlss mean something. 
+GOOD URL structure, and follow http methods the way that one would anticipate. It is mostly for communicating your routes and code to other programmers. 
+
+46. 
+46. 
+46. 
 
 
 
@@ -251,3 +288,40 @@ Files and Fs - asynchronous vs. synchronous
 Always lean towards the asynchronous approach. As your files get bigger and your users increase you want to be able to deliver the best experience possible. This is done through the Event Loop and through using asynchronous operations. It will make it more performant and make it seem faster. 
 
 Streams:
+Streams are event emitters. 
+
+
+# Section 7: HTTP and being a Web Server
+IP: Internet Protocol(IP) - a sequence of numbers that uniquely identifies that computer 
+
+HTTP - For web
+FTP - For Files
+SMTP - For Emails
+
+They're traveling from computer to computer sending information. The way to send those protocols revolves around TCP. 
+
+TCP: Transmission Control Protocol. TCP takes that information and splits it into pieces throught the socket. Each indivdual piece is a packet. Your operating system has these abilities, Node.js provides the ability to access those features of your operating system. 
+
+Port: Once a computer receives a packet, how it knows what program to send it to. 
+
+Browser -> domain name -> maps to IP address(request) -> Web Server -> looks specifically for the port for what you're looking for. We assign a specific port to different protocols. What is the port that we're 'listening' to?
+
+Most unsecure websites, the port that information is being sent from is port 80. There are lots of ports that by default are being used by different things. 
+
+HTTP Parser
+A C program it parses request and responses and other binary data. Knows what to do with the data that is passed onto it. 
+
+API give and receive data to work with and get assistance in building software applications. Most of the data now in days is JSON. 
+
+Sending and receiving data in HTTP responses is very convenient and the ultimate way to transfer data in JS. It is a very simple way to build API's that you can use in all kinds of applications. 
+Object -> JSON 
+
+# Section 8: NPM The Node Package Manager 
+
+
+
+
+# Section 9: Express
+HTTP Method: Specifies the type of action the request wishes to make. (GET, POST, DELETE). Also called verbs.
+
+Work that happens between the request and the response. This is what Node/Express is good for. 
