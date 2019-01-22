@@ -107,7 +107,7 @@ An error first callback is any callback that that takes an error object as its f
 A piece of data being sent through a stream.
 
 34. Abstract (Base) Class
-A type of constructor you never work directly with, but inherit from. E.x streams 
+A type of constructor you never work directly with, but inherit from. E.x streams We create new custom objects which inherit from the abstract base class. 
 
 35. Protocol
 A set of rules two sides agree on when communicating. Both the client and the server are programmed to understand and use that particular set of rules. 
@@ -145,13 +145,26 @@ Global Variables specific to the environment our code lives in.
 46. Middleware
 Code that sits between two layers of software. In the case of Express, it sits between the request and the response. 
 
-46. REST - Representational State Transfer
+47. REST - Representational State Transfer
 An architectural style for building API's. We decide that HTTP verbs and urlss mean something. 
-GOOD URL structure, and follow http methods the way that one would anticipate. It is mostly for communicating your routes and code to other programmers. 
+GOOD URL structure, which follows specific http methods the way that one would anticipate. It is mostly for communicating your routes and code to other programmers. 
 
-46. 
-46. 
-46. 
+48. Pipe
+Connecting two streams by writing to ones stream what is being read from anbother. In Node you pipe from a Readable stream to a Writable stream. 
+
+49. 
+
+50. 
+
+51. 
+
+52. 
+
+53. 
+
+54. 
+55. 
+56. 
 
 
 
@@ -272,23 +285,26 @@ Object Literals are useful for call and apply, binding the contest of a particul
 Synchronous vs. Asynchronous: Asynchronous is basicall
 
 The Event Loop - The Event Loop is what allows JS to become asynchronous. Through the EL, at its most basic JS uses a call stack, a heap(for memory allocation) and a queue. The call stack executes everything in JS that is synchronous, while all the events are placed on a queue for processing. Once the call stack is empty, the callstacks starts running asynchronous events one by one.
-
 Summary: We are running synchronous JS while inside the C++ core of Node asynchronous processes are being handled.  
 
 Buffer and Streams - In Node.js, stream and buffers refer to the idea of data being streamed a little bit at a time into a buffer which will allows us to process the data/stream in chunks. Ex. Netflix
 
 Characters -> Character Sets(Unicode / ASCII) -> Character Encoding (binary data: 101010 )
-JS is pretty bad at character encoding. Luckily due to the help of the V8 JS engine it helps us be able to process character encodings. 
-
-Character Set - Numbers to letters
-Character Encoding - Numbers in base 10 to Numbers in base 2
+JS is pretty bad at character encoding. Luckily due to the help of the V8 JS engine it helps us be able to process character encodings. Character Set - Numbers to letters, Character Encoding - Numbers in base 10 to Numbers in base 2
 Byte: 8 bits - 8 zeroes and ones
 
 Files and Fs - asynchronous vs. synchronous 
 Always lean towards the asynchronous approach. As your files get bigger and your users increase you want to be able to deliver the best experience possible. This is done through the Event Loop and through using asynchronous operations. It will make it more performant and make it seem faster. 
 
 Streams:
-Streams are event emitters. 
+Streams are event emitters. Any streams created have access to on() and emit(). There used to be just streams but now there is 'types' of streams. Readable(can only read data), writable(can send data to stream), duplex(both reads and sends), transform streams(changed data as you move through the stream) etc. Streams are an abstract class. You can build your own stream. Writable and readable from Node's perspective. Request from Nodes perspective is readable. Nodes response to browser is writable. It's almost the opposite. Streams typically take data in buffers, and can be used to copy that data and manipulate it (ex. copy the data).
+
+Piping sending a stream that was readable and pasasing it alon thorugh a writable stream (you can chain the piping of srtreams this way). Pipe the chunk(of data) along streams. 
+
+Node likes to use streams, as long as a stream is correctly implemented, we can read write and pipe data wherever we want. To a database between servers etc. This is powerful and really the node way of thinking about data. It helps Node be performant. We should we always be thinking about where can I use a stream. Minimizing the memory and improving speed. 
+
+Asynchronous + streams = performance. 
+
 
 
 # Section 7: HTTP and being a Web Server
