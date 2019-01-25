@@ -30,9 +30,12 @@ Two different collections of data typically revolve with using O(n) and O(m) tog
 ### Space Complexity
 How much more memory is required by doubling the problem set?
 
-
-
 ## RECURSION
+
+Recursion is sueful for tasks that can be defined in terms of similar subtasks. Sort, search and traversal problems often have simple recursive solutions. Every recursive case must lead eventually to a base case. Many computer architectures spend more time on call overhead than on the actual calculation. Iterative functions don't suffer from overhead and are frequently more efficient. 
+
+Base Case: The subtask that it can perform without calling itself. 
+Recursive Case: In which the function calls itself to perform a subtask.
 
 ### Recursion Tips (when implementing)
 
