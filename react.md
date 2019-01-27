@@ -139,7 +139,7 @@ forceUpdate() : If your component depends on some other data that does not inclu
 Talking about different operations to perform on records inside an application. CRUD operations are pretty much in almost every single application.
 
 ### React Routers (different dependencty types)
-react-router: Core navigation lib - we don't install this manually (tipically)
+react-router: Core navigation lib - we don't install this manually (typically)
 react-router-native: Navigation for react-native apps (native mobile applications)
 react-router-redux: Bindings between redux and react-router (not necessary)
 
