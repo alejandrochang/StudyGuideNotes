@@ -352,11 +352,44 @@ NPM init, nodemon and package.json. Npm init is just a json deo that quickly set
 
 --> it creates a node_modules folder that holds and organizes your modules downloaded from the npm registry. Package.json is updated automatically adding the dependencies you requested. In this case moment from NPM. A carat ^1.1.1 is very important in dependencies. The carat allows npm to update anything within the major release of a dependency. If you change to a tilde ~1.1.1 it means don't update my packages only minor patches. After this, you can go and give the package.json to someone else, which allows other to download the dependencies and use your application. 
 
-In the bigger scope most node_modules have other node_modules which could have their own node_modules. Essentially you can think about it as nested dependencies, as certain pieces of code need their own dependencies to function. 
-
+In the bigger scope most node_modules have other node_modules which could have their own node_modules. Essentially you can think about it as nested dependencies, as certain pieces of code need their own dependencies to function. Use nodemon so that your app updates in time without having to restart every time. Test out packages before putting them into heavy use. 
 
 
 # Section 9: Express
-HTTP Method: Specifies the type of action the request wishes to make. (GET, POST, DELETE). Also called verbs.
+Environment Variables: Global variables specific to the environment(server) our code is living in. 
+Express has methods/verbs that specify the type of action the request wishes to make. Examples: 
+GET: downloading something, POST: a form submit.
+You can have the same URL with different verbs that respond differently depending on the verb. 
 
-Work that happens between the request and the response. This is what Node/Express is good for. 
+HTTP Method: Specifies the type of action the request wishes to make. (GET, POST, DELETE). Also called verbs.
+Work that happens between the request and the response. This is what Node/Express is good for. With express you don't have to worry about the content-type, express takes care of that for you. 
+
+With express, the code is cleaner, and we are able to achieve much more in a small amount of time while handling complex operations. Example:
+
+```js
+var express = require('express');
+var app = express();
+var port = process.env.PORT || 3000; // will be to the nevironment var and if not port 3000
+
+app.get('/', (req, res) => {
+  res.send('<html><head></head><body><h1>Hello World</h1></body></html>')
+})
+
+app.get('/person/:id', (req, res) => {
+  res.send('<html><head></head><body><h1> Person: ' + req.params.id + '</h1></body></html>') // pattern match, dealing with routes
+}) 
+
+app.get('/json', (req, res) => {
+  res.json({
+    firstName: 'Alex',
+    lastName: 'Chang',
+    address: {
+      state: 'New York',
+      city: 'New York'
+    }
+  });
+})
+
+app.listen(port);
+```
+
