@@ -334,7 +334,13 @@ Serialization: obj -> json, deserialization: json -> obj. And this is an API.
 Routing in the server can be easily obtainable through the writeHeaders and the request url's. Routing at its most basic point is mapping http request to its content. Whether there are files that are on the server or not. Manually dealing with these routes is pretty tough, writing a seperate url for everything you want ot do is complicated. Express helps with that.
 
 # Section 8: NPM The Node Package Manager 
+The largest ecosystem in open source code. A package is just code(managed and maintained with a package management system). A package management system such as NPM is software that automates and facilitates installing and updating packages. (Deals with what version you have or need and manages dependencies).
+Dependency: Code that another set of code depends on to function. (Apps have dependencies, if you use it in your code, it needs it to function).
 
+Semantic Versioning: Specifying what version of a set of code this is. Ex. 1.7.2 Major.Minor.Patch.
+Patches: Typically bugs and miniscule changes on a version.
+Minor: Typically some new features were added. Your code should continue to work fine. 
+Major: Typically Big changes. Your code might break. Take a good look of the code and document any changes. 
 
 
 
