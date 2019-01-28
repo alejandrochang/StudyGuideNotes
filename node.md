@@ -328,9 +328,12 @@ HTTP Parser
 A C program it parses request and responses and other binary data. Knows what to do with the data that is passed onto it. 
 
 API give and receive data to work with and get assistance in building software applications. Most of the data now in days is JSON. 
-
 Sending and receiving data in HTTP responses is very convenient and the ultimate way to transfer data in JS. It is a very simple way to build API's that you can use in all kinds of applications. 
 Object -> JSON 
+
+Endpoint: One URL in a web API. 
+
+Streams and Performance: Streams are just a wrapper on the idea of dealing with data a chunk at a time. 
 
 # Section 8: NPM The Node Package Manager 
 
