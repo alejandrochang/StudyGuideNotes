@@ -335,12 +335,24 @@ Routing in the server can be easily obtainable through the writeHeaders and the 
 
 # Section 8: NPM The Node Package Manager 
 The largest ecosystem in open source code. A package is just code(managed and maintained with a package management system). A package management system such as NPM is software that automates and facilitates installing and updating packages. (Deals with what version you have or need and manages dependencies).
-Dependency: Code that another set of code depends on to function. (Apps have dependencies, if you use it in your code, it needs it to function).
+Dependency: Code that another set of code depends on to function. (Apps have dependencies, if you use it in your code, it needs it to function). 
+
+When you install packages through NPM, they come from the NPM registry. You can look at the registry and read on packages at their website: www.npmjs.com.
 
 Semantic Versioning: Specifying what version of a set of code this is. Ex. 1.7.2 Major.Minor.Patch.
 Patches: Typically bugs and miniscule changes on a version.
 Minor: Typically some new features were added. Your code should continue to work fine. 
 Major: Typically Big changes. Your code might break. Take a good look of the code and document any changes. 
+
+NPM init, nodemon and package.json. Npm init is just a json deo that quickly sets up your app name, purpose and scripts for you to access your application and configure it to your needs. All the npm packages are structured as node modules. As soon as you download from the npm registry, ex:
+
+```js
+  npm install moment --save
+```
+
+--> it creates a node_modules folder that holds and organizes your modules downloaded from the npm registry. Package.json is updated automatically adding the dependencies you requested. In this case moment from NPM. A carat ^1.1.1 is very important in dependencies. The carat allows npm to update anything within the major release of a dependency. If you change to a tilde ~1.1.1 it means don't update my packages only minor patches. After this, you can go and give the package.json to someone else, which allows other to download the dependencies and use your application. 
+
+In the bigger scope most node_modules have other node_modules which could have their own node_modules. Essentially you can think about it as nested dependencies, as certain pieces of code need their own dependencies to function. 
 
 
 
