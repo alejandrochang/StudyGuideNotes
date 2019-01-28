@@ -315,25 +315,23 @@ FTP - For Files
 SMTP - For Emails
 
 They're traveling from computer to computer sending information. The way to send those protocols revolves around TCP. 
-
 TCP: Transmission Control Protocol. TCP takes that information and splits it into pieces throught the socket. Each indivdual piece is a packet. Your operating system has these abilities, Node.js provides the ability to access those features of your operating system. 
 
 Port: Once a computer receives a packet, how it knows what program to send it to. 
+Streams and Performance: Streams are just a wrapper on the idea of dealing with data a chunk at a time. 
 
 Browser -> domain name -> maps to IP address(request) -> Web Server -> looks specifically for the port for what you're looking for. We assign a specific port to different protocols. What is the port that we're 'listening' to?
-
 Most unsecure websites, the port that information is being sent from is port 80. There are lots of ports that by default are being used by different things. 
 
 HTTP Parser
 A C program it parses request and responses and other binary data. Knows what to do with the data that is passed onto it. 
 
 API give and receive data to work with and get assistance in building software applications. Most of the data now in days is JSON. 
-Sending and receiving data in HTTP responses is very convenient and the ultimate way to transfer data in JS. It is a very simple way to build API's that you can use in all kinds of applications. 
-Object -> JSON 
+Sending and receiving data in HTTP responses is very convenient and the ultimate way to transfer data in JS. It is a very simple way to build API's that you can use in all kinds of applications. Object -> JSON 
+Endpoint: One URL in a web API. Sometimes that endpoint (URL) does multiple things by making choices based on the HTTP request headers. Give and receive data in a variety of formats (mostly JSON).
 
-Endpoint: One URL in a web API. 
-
-Streams and Performance: Streams are just a wrapper on the idea of dealing with data a chunk at a time. 
+Serialization: obj -> json, deserialization: json -> obj. And this is an API. 
+Routing in the server can be easily obtainable through the writeHeaders and the request url's. Routing at its most basic point is mapping http request to its content. Whether there are files that are on the server or not. Manually dealing with these routes is pretty tough, writing a seperate url for everything you want ot do is complicated. Express helps with that.
 
 # Section 8: NPM The Node Package Manager 
 
