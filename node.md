@@ -398,3 +398,30 @@ Querying and Post Parameters: You can use them to specify the query of your url 
 
 REST: Representational State Transfer. An architectural style for building API's. We decide that the HTTP methods/verbs actualy mean something. Following a good URL structure that other programmers can understand. 
 ex: get - get data from db, post - save data to db, delete - delete data from db
+
+Structuring an APP: There are many ways to structure your application using express. It can be done through the express routers or it can be done through modules. There are many different patterns out there. Try them all, and see what you like best. 
+
+# Section 10: JS, JSON and DB's
+Relational Databases and SQL: A table that has field, columns and rows of data. Ex. You might have a table with person information and address information. You split information as much as possible and link it with id properties. You can combine tables and get a result. You can think of a table as an array of objects. This is how we can deal with tabular data(table data). Remember, it will ultimately be transfored into JS objects. Ex:
+
+```js
+  [
+    {
+      ID: 1,
+      Firstname: 'John',
+      Lastname: 'Doe',
+      Address: '555 Main St'
+    }, 
+    {
+      ID: 2,
+      Firstname: 'Jane',
+      Lastname: 'Doe',
+      Address: '333 Broadway St'
+    }
+  ]
+```
+The npm package turns it into a js array. You can use mySQL in NPM. A good utility that uses with Node will just give you javascript objects in an array back. 
+
+NoSQL: A variety of technologies, storing and retrieving datas not using tables. One of those alternatives is called a document database. MongoDB is one of those. The idea of sacrificing hard drive space for flexibility. 
+MongoDB and Mongoose. Mongoose is an NPM package that is the most popular to use with MongoDB. The way that Javascript stores data is very similar to the BSON documents MongoDB stores in the database. 
+
