@@ -394,5 +394,7 @@ app.get('/', (req, res) => {
 You can use a lot of incredible middleware thorugh npm packages that will do something in betweent he req and res. You ca have your own middleware which can pass the request and response. 
 
 Templates and Template Engines: Ejs -> very similar to ruby erb. 
+Querying and Post Parameters: You can use them to specify the query of your url request. 
 
-Querying and Post Parameters:
+REST: Representational State Transfer. An architectural style for building API's. We decide that the HTTP methods/verbs actualy mean something. Following a good URL structure that other programmers can understand. 
+ex: get - get data from db, post - save data to db, delete - delete data from db
