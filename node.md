@@ -152,21 +152,6 @@ GOOD URL structure, which follows specific http methods the way that one would a
 48. Pipe
 Connecting two streams by writing to ones stream what is being read from anbother. In Node you pipe from a Readable stream to a Writable stream. 
 
-49. 
-
-50. 
-
-51. 
-
-52. 
-
-53. 
-
-54. 
-55. 
-56. 
-
-
 
 ### Notes by Section
 
@@ -393,3 +378,21 @@ app.get('/json', (req, res) => {
 app.listen(port);
 ```
 
+Express gives us full flexiblity on working with our routes allowing us to code more quickly and efficiently.
+Middleware: Code that sits between two layers of software. In express this is typically code in between the request and response. 
+
+Very common to add static files inside a public folder. Ex. Request to get html -> another request for the stylesheet through the middleware rendering the css in that specific file. It requested it at the address of the assets/style.css. Example below: This is using the express static middleware. 
+
+```js
+app.use('/assets', express.static(__dirname + '/public'));
+
+app.get('/', (req, res) => {
+  res.send('<html><head><link href=assets/style.css type=text/css rel=stylesheet /></head><body><h1>Hello World</h1></body></html>')
+});
+```
+
+You can use a lot of incredible middleware thorugh npm packages that will do something in betweent he req and res. You ca have your own middleware which can pass the request and response. 
+
+Templates and Template Engines: Ejs -> very similar to ruby erb. 
+
+Querying and Post Parameters:
