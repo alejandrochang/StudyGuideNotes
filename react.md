@@ -98,13 +98,12 @@ A react components lifecycle begins with mounting, updating and unmounting. The 
 
 Initial Rendering - Mounting:
 - constructor
-- componentWillMount
+- getDerivedStateFromProps
 - render
 - componentDidMount
 
 Update of the state:
 - shouldComponentUpdate
-- componentWillUpdate
 - render
 - componentDidUpdate
 
