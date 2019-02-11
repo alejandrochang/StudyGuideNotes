@@ -27,5 +27,5 @@ UITextField
 UI -> Components Exposed by React Native 
 Logic -> Written by us in JavaScript (JS Thread hosted by React Native App)
 
-
+You can use expo App on your phone or computer to see the layout you're expecting. 
 
