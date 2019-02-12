@@ -4,7 +4,7 @@ What is React Native?
 "Learn once write everywhere". React Native is all about embracing the differences that exist within Android and IOS. You learn how to use a toolset with different platforms to adjust your code and reuse big chunks of code. Build real mobuile apps using React Native and JS.
 
 React Native is NOT a Web App running on mobile device. It is not a web app hosted by webview in native app. 
-We have a real nativ application. JS + React Native App compiled to Native Code. (We use both libraries: React + React Native)
+We have a real native application. JS + React Native App compiled to Native Code. (We use both libraries: React + React Native)
 We don't have DOM Elements. React Native gives us other components which can be compiled to Native Code. (Alternative DOM)
 
 1. React (Web)
@@ -56,5 +56,8 @@ ScrollView:                 Provides a scrolling container that can host multipl
 
 StyleSheet:                 Provides an abstraction layer similar to CSS stylesheets.
 
+Two ways to create the app: create-react-native-app {pn} and react-native init {pn}
+The latter is much more powerful way to create an application. Doesn't need to use expo, and ultimately uses simulators for the applications.
 
-
+Android Studio: Launch simulator for android.
+XCode: Launch simulator for IOS.
