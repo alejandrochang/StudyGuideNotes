@@ -16,3 +16,8 @@ Algorithms:
 - Dynamic Programming
 - BFS + DFS (Searching)
 - Recursion
+
+Chat Sheet: 
+1) Readable/Understandable Code
+2) Time Complexity
+3) Space Complexity
