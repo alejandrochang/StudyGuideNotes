@@ -61,3 +61,7 @@ The latter is much more powerful way to create an application. Doesn't need to u
 
 Android Studio: Launch simulator for android.
 XCode: Launch simulator for IOS.
+
+Dev Tools:
+Android: Command + M -> turn on hot reloading
+IOS: Command + D -> turn on hot reloading
